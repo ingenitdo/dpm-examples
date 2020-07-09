@@ -1,0 +1,840 @@
+{
+  "language": "de",
+  "participants": [],
+  "connectionTypes": [
+    {
+      "id": "ct1",
+      "color": "#7D7D7D",
+      "textColor": "white",
+      "legend": false,
+      "legendOrder": 1,
+      "legendLabel": "Datenfluss",
+      "default": true
+    },
+    {
+      "id": "ct2",
+      "color": "#7D7D7D",
+      "textColor": "white",
+      "strokeDasharray": "6, 6",
+      "legend": false,
+      "legendOrder": 2,
+      "legendLabel": "Pseudonyme Daten"
+    },
+    {
+      "id": "ct3",
+      "color": "#7D7D7D",
+      "textColor": "white",
+      "strokeDasharray": "3, 3",
+      "legend": false,
+      "legendOrder": 3,
+      "legendLabel": "Anonyme Daten"
+    }
+  ],
+  "boxTypes": [
+    {
+      "id": "bt-default",
+      "color": "#80CDEC",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#F2F2F2",
+      "textColorInactive": "#BC1200",
+      "legend": true,
+      "legendOrder": 4,
+      "legendLabel": "Erhobene / verarbeitete Daten & Zweck der Verarbeitung",
+      "sourceDefault": true,
+      "purposeDefault": true,
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-ds-opt-in",
+      "color": "#73B4E6",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#B3DEFF",
+      "textColorInactive": "#BC1200",
+      "legend": false,
+      "legendOrder": 5,
+      "legendLabel": "Nur mit Zustimmung des Nutzers erhobene / verarbeitete Daten",
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-ds-notprocessed",
+      "color": "#FFC4C5",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#FFDEDE",
+      "textColorInactive": "#BC1200",
+      "legend": true,
+      "legendOrder": 6,
+      "legendLabel": "Nicht erhobene und verarbeitete Daten",
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-action",
+      "color": "#80CDEC",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#F5F5F5",
+      "textColorInactive": "#BC1200",
+      "actionDefault": true,
+      "shortInfoBackground": "#DEDEDE",
+      "shortInfoActiveBackground": "#D93954",
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-action-warn",
+      "color": "#BC1200",
+      "textColor": "white",
+      "colorInactive": "#DEDEDE",
+      "textColorInactive": "#BC1200",
+      "shortInfoBackground": "#DEDEDE",
+      "shortInfoActiveBackground": "#c00f2d",
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    }
+  ],
+  "cases": [
+    {
+      "id": "s-case1",
+      "label": "Kontaktaufzeichnung und Risikoermittlung",
+      "info": "\n          <div>\n            <p>Dieser Fall stellt alle relevanten Mechanismen dar, die für die Risikoermittlung und Kontaktaufzeichnung per Bluetooth verwendet werden.</p>\n            <p>Die Risikoermittlung und damit auch die Aufzeichnung von Kontaktereignissen per Bluetooth muss von Ihnen einmalig aktiviert werden und kann von Ihnen jederzeit wieder deaktiviert werden.</p>\n          </div>\n        ",
+      "permissions": "\n          <div>\n            <p>Benötigte Berechtigungen für diesen Bereich der Corona-Warn-App:</p>\n            <p><ul>\n            <li><b>Internet:</b> Internetzugriff wird benötigt um mit den Serversystemen der App zu kommunizieren. Diese Kommunikation wird für die Risiko-Ermittlung, den Abruf von Testergebnissen sowie für Infektionsmeldungen benötigt.</li>            \n            <li><b>Erlaubnis der Kontaktaufzeichnung per Bluetooth:</b> Wird benötigt, um den im Betriebssystem des Smartphones eingebauten Kontaktaufzeichnungs-Mechanismus grundsätzlich zu aktivieren.</li>            \n            <li><b>Standortermittlung (nur Android Smartphones):</b> Wird benötigt, um nach Bluetooth-Signalen anderer Smartphones suchen zu können. Standortdaten werden dabei nicht erhoben.</li>            \n            <li><b>Kamera:</b> Wird benötigt, falls Sie den QR-Code Ihres Tests mit der Corona-Warn-App einscannen möchten, um sich automatisch über das Testergebnis benachrichtigen zu lassen.</li>\n            <li><b>Anzeigen von Benachrichtigungen:</b> Wird benötigt, um Sie im Fall einer möglichen Infektion mittels einer Warnmeldung auf Ihrem Smartphone zu benachrichtigen.<br />\n            Diese Berechtigung wird auch benötigt, wenn sie im Falle eines Corona-Tests den QR-Code nutzen, um sich automatisch über das Testergebnis benachrichtigen zu lassen.</li>\n            <li><b>Hintergrundbetrieb:</b> Wird benötigt, um die Risiko-Berechnung automatisch durchzuführen und die Abfrage von Testergebnissen vorzunehmen.</li>\n            </ul></p>\n          </div>\n        ",
+      "dataSources": [
+        {
+          "id": "s1-ds1",
+          "typeId": "bt-default",
+          "label": [
+            "Sichere Schlüssel und regelmäßig wechselnde Nahbereichskennung",
+            "Erzeugung und Speicherung im eigenen Smartphone"
+          ],
+          "info": "\n          <div>\n            <p>Ihr Smartphone erzeugt täglich wechselnde Schlüssel (im Wesentlichen als sehr lange Zufallszahl zu verstehen) sowie regelmäßig wechselnde Nahbereichskennungen, die von Ihrem Smartphone per Bluetooth versendet werden.</p>\n            <p>Die Nahbereichskennung wechselt alle 15 Minuten und lässt sich aus dem Tages-Schlüssel berechnen. Aus den Nahbereichskennungen allerdings kann der Tages-Schlüssel NICHT ermittelt werden.</p> \n            <p>Die verwendeten mathematischen Verfahren sind als kryptographisch sicher zu beurteilen. Die Tages-Schlüssel und die Nahbereichskennungen erlauben keinerlei Rückschlüsse auf Sie oder Ihr Smartphone.</p> \n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s1-ds2",
+          "typeId": "bt-default",
+          "label": [
+            "Empfangene Nahbereichskennungen",
+            "Speicherung für maximal 14 Tage auf dem eigenen Smartphone"
+          ],
+          "info": "\n          <div>\n            <p>Alle Smartphones, auf denen die Corona-Warn-App aktiv ist und deren Abstand gering genug ist, tauschen gegenseitig die Nahbereichskennungen aus.</p>\n            <p>Auf Ihrem Smartphone werden alle Nahbereichskennungen der Smartphones in Ihrer Nähe mit Datum, Uhrzeit und Signalstärke in einem lokalen Kontaktprotokoll gespeichert.</p>\n          </div>\n        ",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        }
+      ],
+      "dataPurposes": [
+        {
+          "id": "s1-dp1",
+          "typeId": "bt-default",
+          "label": [
+            "Schaffung der technischen Grundlage für eine anonyme Informationsmöglichkeit von Kontaktpersonen"
+          ],
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s1-dp2",
+          "typeId": "bt-default",
+          "label": [
+            "Erkennung möglicher Infektionen bei Wahrung der Anonymität der betroffenen Personen"
+          ],
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "s1-a1",
+          "typeId": "bt-action",
+          "label": [
+            "Aussendung der alle 15 Minuten wechselnden Nahbereichskennung"
+          ],
+          "info": "\n          <div>\n            <p>Die Nahbereichskennung wird per Funksignal Ihres Smartphones übertragen und ist bis zu einer Entfernung von ca. 10 Metern zu empfangen.</p>\n            <p>Die empfangene Signalstärke gibt (zusammen mit der Signalstärke des sendenden Smartphones) näherungsweise Auskunft über den Abstand.</p>\n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s1-a2",
+          "typeId": "bt-action",
+          "label": [
+            "Empfang und Speicherung anderer Nahbereichskennungen"
+          ],
+          "info": "\n          <div>\n            <p>Alle Smartphones, auf denen die Corona-Warn-App installiert ist, senden Nachbereichskennungen über Bluetooth aus. Diese werden innerhalb von bis zu ca. 10 Metern Reichweite von Ihrem Smartphone empfangen.</p>\n          </div>\n        ",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        }
+      ],
+      "connections": [
+        {
+          "id": "s1-c1",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s1-ds1",
+          "destination": "s1-a1",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s1-c2",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s1-a1",
+          "destination": "s1-dp1",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s1-c3",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s1-ds2",
+          "destination": "s1-a2",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "s1-c4",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s1-a2",
+          "destination": "s1-dp2",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        }
+      ],
+      "isOpen": false
+    },
+    {
+      "id": "s-case2",
+      "label": "Sie sind infiziert",
+      "info": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"Kontaktaufzeichnung und Risikoermittlung\" weiter oben.<br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"Kontaktaufzeichnung und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "permissions": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"Kontaktaufzeichnung und Risikoermittlung\" weiter oben.<br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"Kontaktaufzeichnung und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "dataSources": [
+        {
+          "id": "s2-ds1",
+          "typeId": "bt-default",
+          "label": [
+            "Corona-Test:",
+            "QR-Code Ihrer Probe"
+          ],
+          "infoTitle": "Corona-Test: QR-Code Ihrer Probe",
+          "info": "\n          <div>\n            <p>Wenn Sie einen Test auf eine Covid-19 Infektion durchführen, erhalten Sie eine Informationsbroschüre mit einem QR-Code, der die von Ihnen entnommene Probe eindeutig identifiziert.</p>\n            <p>Den QR-Code können Sie mit der Corona-Warn-App einlesen. Sobald das Ergebnis zu Ihrer Probe vorliegt, werden Sie automatisch von der App benachrichtigt.</p>\n            <p><em>Das Verfahren ist freiwillig. Wenn Sie auf das Einlesen des QR-Codes verzichten, werden Sie - wie bisher üblich - durch das zuständige Gesundheitsamt über das Testergebnis informiert. Die Corona-Warn-App bietet Ihnen die Möglichkeit, diesen Benachrichtigungsvorgang zu übernehmen und Sie auf diese Weise schneller und ohne Verzögerung über Ihr Testergebnis zu informieren.</em></p> \n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s2-ds2",
+          "typeId": "bt-default",
+          "label": [
+            "Corona-Warn-App:",
+            "Ergebnis Ihres Corona-Tests"
+          ],
+          "infoTitle": "Corona-Warn-App: Ergebnis Ihres Corona-Tests",
+          "info": "\n          <div>\n            <p>Das zuständige Labor teilt das Ergebnis des Tests in jedem Fall dem zuständigen Gesundheitsamt mit. Zusätzlich wird das Testergebnis mit Hilfe Ihres QR-Codes an die Server der Corona-Warn-App gemeldet.</p> \n            <p>Falls Sie den QR-Code mit der Corona-Warn-App eingelesen haben, kann Ihr Smartphone regelmäßig automatisch prüfen, ob das Testergebnis vorliegt und Sie darüber benachrichtigen.</p> \n          </div>\n        ",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "s2-ds3",
+          "typeId": "bt-default",
+          "label": [
+            "Infektionsmeldung:",
+            "Bei Ihnen wird Covid-19 diagnostiziert"
+          ],
+          "infoTitle": "Infektionsmeldung: Bei Ihnen wird Covid-19 diagnostiziert",
+          "info": "\n          <div>\n            <p>Wenn Sie mit Covid-19 infiziert sind und ein entsprechendes Testergebnis erhalten haben, so können Sie Ihre Infektion mit Hilfe der Corona-Warn-App melden. Dies ist ein freiwilliger Vorgang, dem Sie nicht zustimmen müssen. Im Sinne der Allgemeinheit ist es allerdings sehr sinnvoll, diese Meldung durchzuführen.</p>\n            <p>Die Meldung kann durch die Corona-Warn-App direkt durchgeführt werden, wenn Sie Ihr Testergebnis ebenfalls über die App erhalten haben.</p>\n            <p>Falls Sie Ihr Testergebnis nicht über die App erhalten haben, erhalten Sie über die Hotline der Corona-Warn-App eine sogenannte TeleTAN, die Sie in die App eingeben und damit die Meldung auslösen können.</p>\n          </div>\n        ",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        }
+      ],
+      "dataPurposes": [
+        {
+          "id": "s2-dp1",
+          "typeId": "bt-default",
+          "label": [
+            "Schnellere Mitteilung von Corona-Test-Ergebnissen",
+            "Entlastung der Gesundheitsämter"
+          ],
+          "position": {
+            "start": 0,
+            "end": 1
+          }
+        },
+        {
+          "id": "s2-dp2",
+          "typeId": "bt-default",
+          "label": [
+            "Kontaktpersonen können gewarnt werden"
+          ],
+          "info": "\n          <div>\n            <p>Alle Personen, die einen epidemiologisch relevanten Kontakt mit Ihnen hatten, werden vor einer potentiellen Infektion gewarnt.</p>\n            <p>Sie ermöglichen durch Weitergabe der Information, dass Sie mit Covid-19 infiziert sind, Ihren Kontaktpersonen schnell zu reagieren und damit die Infektionskette zu unterbrechen.</p>\n            <p>Die Corona-Warn-App bietet hier zwei wesentliche Vorteile:\n             <ul>\n             <li>Sie beschleunigt den Warn-Prozess im Vergleich zur manuellen Ermittlung von Kontakten durch das Gesundheitsamt enorm.</li>\n             <li>Zusätzlich werden auch Personen gewarnt, mit denen Sie Kontakt hatten, die Sie aber nicht namentlich kennen. Diese Personen zu benachrichtigen war bisher bei der manuellen Ermittlung von Kontakten durch das Gesundheitsamt nicht möglich.</li>\n            </p>\n          </div>\n        ",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "s2-a1",
+          "typeId": "bt-action",
+          "label": [
+            "Verwendung von QR-Codes zur Identifikation von Proben"
+          ],
+          "info": "\n          <div>\n          <div>\n            <p>Der QR-Code wird zusammen mit der Ihnen entnommenen Probe in das zuständige Labor geschickt. Das Labor führt die Testung auf Covid-19 durch und meldet das Testergebnis unverzüglich mit Hilfe des QR-Codes.</p>\n            <p>Die Corona-Warn-App registriert Ihren QR-Code beim Corona-Warn-Server und ist damit berechtigt, Ihr Testergebnis automatisch abzurufen.</p>\n          </div>\n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s2-a2",
+          "typeId": "bt-action",
+          "label": [
+            "Automatische Abfrage des Testergebnisses"
+          ],
+          "info": "\n          <div>\n            <p>Die Corona-Warn-App prüft regelmäßig, ob Ihr Testergebnis vorliegt.</p>\n            <p>Sobald das Ergebnis vorliegt, benachrichtigt Sie die App. Erst wenn Sie die App öffnen, wir Ihnen das konkrete Ergebnis des Tests angezeigt.</p>\n          </div>\n        ",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "s2-a3",
+          "typeId": "bt-action",
+          "label": [
+            "Ihre Diagnose-Schlüssel werden an ein zentrales Verzeichnis übermittelt"
+          ],
+          "info": "\n          <div>\n            <p>Mit Ihren Diagnose-Schlüsseln können Personen, mit denen Sie Kontakt hatten, erkennen, dass sie unter Umständen infiziert wurden. Rückschlüsse auf Ihr Smartphone oder Ihre Person zu ziehen, ist auf Basis der übermittelten Schlüssel nicht möglich.</p>\n            <p>Damit niemand unberechtigt eine Infektionsmeldung vornehmen kann, benötigen Sie eine TAN. Ihre App erhält die TAN automatisch, wenn Sie das Ergebnis Ihres Corona-Tests über die App erhalten haben. Ansonsten erhalten Sie über die Hotline der Corona-Warn-App eine sogenannte TeleTAN, mit der Sie die Infektionsmeldung durchführen können.</p>\n          </div>\n        ",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        }
+      ],
+      "connections": [
+        {
+          "id": "s2-c1",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s2-ds1",
+          "destination": "s2-a1",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s1-c2",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s2-a1",
+          "destination": "s2-dp1",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s2-c3",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s2-ds2",
+          "destination": "s2-a2",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "s1-c4",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s2-a2",
+          "destination": "s2-dp1",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "s1-c5",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s2-ds3",
+          "destination": "s2-a3",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        },
+        {
+          "id": "s1-c6",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s2-a3",
+          "destination": "s2-dp2",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        }
+      ],
+      "isOpen": false
+    },
+    {
+      "id": "s-case3",
+      "label": "Ein Kontakt ist infiziert",
+      "info": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"Kontaktaufzeichnung und Risikoermittlung\" und \"Sie sind infiziert\" weiter oben.<br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"Kontaktaufzeichnung und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "permissions": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"Kontaktaufzeichnung und Risikoermittlung\" und \"Sie sind infiziert\" weiter oben.<br/><br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"Kontaktaufzeichnung und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "dataSources": [
+        {
+          "id": "s3-ds1",
+          "typeId": "bt-default",
+          "label": [
+            "Infektionsmeldung:",
+            "Übertragung der Schlüssel von aktuell infizierten Personen"
+          ],
+          "infoTitle": "Infektionsmeldung: Übertragung der Schlüssel von aktuell infizierten Personen",
+          "info": "\n          <div>\n            <p>Im Infektionsfall haben erkrankte Personen die Möglichkeit, ihre letzten 14 Tages-Schlüssel an den Corona-Warn-Server zu melden. Diese Schlüssel werden ab diesem Zeitpunkt Diagnose-Schlüssel genannt.</p>\n            <p>Eine Rückverfolgung zu dem Smartphone oder den infizierten Personen selbst ist auf Basis der übertragenen Schlüssel nicht möglich.</p>\n            <p>Der Server stellt alle Diagnose-Schlüssel von infizierten Personen für alle Nutzer der Corona-Warn-App zur Verfügung.</p>\n            <p>Bei der Infektionsmeldung durch die App fallen auf Serverseite Zugriffsdaten und Gesundheitsdaten an.</p>   \n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        }
+      ],
+      "dataPurposes": [
+        {
+          "id": "s3-dp1",
+          "typeId": "bt-default",
+          "label": [
+            "Regelmäßige Überprüfung, ob Kontakt zu einer infektiösen Person bestanden haben könnte",
+            "Warnung bei Übereinstimmung"
+          ],
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "s3-a1",
+          "typeId": "bt-action",
+          "label": [
+            "Regelmäßiger Download aller Diagnose-Schlüssel infizierter Personen"
+          ],
+          "info": "\n          <div>\n            <p>Alle aktuellen Diagnose-Schlüssel werden regelmäßig, initiiert durch die Corona-Warn-App, auf Ihr Smartphone übertragen. Dort werden die dazugehörigen Nahbereichskennungen berechnet und so ermittelt, ob Sie Kontakt zu einer der infizierten Personen hatten.</p>\n            <p>Anschließend wird unter anderem auf Basis der Dauer und des Abstands des Kontakts berechnet, wie hoch Ihr Infektionsrisiko bei diesem Kontakt war.</p> \n            <p>Sollte ein erhöhtes Infektionsrisiko für Sie ermittelt werden, erhalten Sie eine Warnmeldung durch die App. \n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        }
+      ],
+      "connections": [
+        {
+          "id": "s3-c1",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s3-ds1",
+          "destination": "s3-a1",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s3-c2",
+          "typeId": "ct3",
+          "label": "",
+          "source": "s3-a1",
+          "destination": "s3-dp1",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        }
+      ],
+      "isOpen": false
+    },
+    {
+      "id": "s-case6",
+      "label": "Welche Daten werden nicht erfasst?",
+      "info": "\n          <div>\n            <p>Dieser Bereich listet zu Ihrer Information Daten(-arten), die von der Corona-Warn-App eben nicht erfasst und verarbeitet werden.</p>\n            <p>Die obigen Darstellungen von Daten und Prozessen sind vollständig. Es findet darüber hinaus keine Datenverarbeitung oder -übertragung statt. Insbesondere gilt das für die unten aufgeführten, besonders sensiblen Daten.</p>\n          </div>\n        ",
+      "dataSources": [
+        {
+          "id": "s6-ds1",
+          "typeId": "bt-ds-notprocessed",
+          "label": [
+            "Kontakt und Adressdaten"
+          ],
+          "info": "\n          <div>\n            <p>Kontakt und Adressdaten werden weder erhoben noch übertragen. Ein Zugriff auf die im Smartphone gespeicherten Kontakte findet nicht statt.</p>\n            <p>Stattdessen erfasst die Corona-Warn-App Kontaktereignisse mit Personen in Ihrer Umgebung, die ebenfalls die Corona-Warn-App installiert haben.</p>\n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "s6-ds2",
+          "typeId": "bt-ds-notprocessed",
+          "label": [
+            "Standortdaten"
+          ],
+          "info": "\n          <div>\n            <p>Standortdaten (z.B. GPS) werden nicht erfasst und auch nicht übertragen.</p>\n            <p>Stattdessen ermittelt die Corona-Warn-App lediglich Nahbereichskennungen von Personen, die in Ihrer Nähe waren.</p>\n          </div>\n        ",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "s6-ds4",
+          "typeId": "bt-ds-notprocessed",
+          "label": [
+            "Sonstige Daten"
+          ],
+          "info": "\n          <div>\n            <p>Sonstige Daten werden weder erhoben noch übertragen.</p>\n            <p>Die in dieser Ansicht dargestellten Datenarten und Prozesse sind vollständig. Es findet darüber hinaus keine Datenverarbeitung oder -übertragung statt.</p>\n            <p>Die App ist so konzipiert, dass so wenig personenbezogene Daten wie möglich verarbeitet werden. Das bedeutet zum Beispiel, dass die App keine Daten erfasst, die es dem RKI oder anderen Nutzern ermöglichen, auf Ihre Identität, Ihren Gesundheitsstatus oder Ihren Standort zu schließen.</p>\n            <p>Zudem verzichtet die App bewusst auf jegliche Erfassung oder Analyse Ihres Nutzungsverhaltens durch Tracking-Tools.</p>            \n          </div>\n        ",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        }
+      ],
+      "dataPurposes": [],
+      "actions": [],
+      "connections": [],
+      "isOpen": false
+    }
+  ],
+  "sourceInformation": {
+    "id": "si-1",
+    "info": "<div><table>\n    <tr><td>Privacy-Preserving Contact Tracing&nbsp;&nbsp;</td><td><a href=\"https://www.apple.com/covid19/contacttracing\">www.apple.com/covid19/contacttracing</a></td></tr>\n    <tr><td>Quellcode der Corona-Warn-App auf Github&nbsp;</td><td><a href=\"https://github.com/corona-warn-app\">www.github.com/corona-warn-app</a></td></tr>\n    <tr><td>Prozessdokumentation der Corona-Warn-App auf Github&nbsp;</td><td><a href=\"https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md\">www.github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md</a></td></tr>\n  </table></div>"
+  },
+  "revisionHistory": {
+    "id": "rh-1",
+    "info": "<div><p><ul>\n    <li>14.06.2020: Initiale Version (V1.0)</li>\n    <li>19.06.2020: Inhaltliche und begriffliche Anpassung an die Datenschutzerklärung der App (V1.1)</li>\n    </ul></p></div>"
+  },
+  "glossar": [
+    {
+      "id": "g1",
+      "keywords": [
+        "Kryptographisch",
+        "Kryptographisch sicher",
+        "kryptographisch sicher"
+      ],
+      "title": "Kryptographie",
+      "content": "<div>\n    <p>Kryptographie ist ursprünglich die Wissenschaft der Verschlüsselung von Informationen, heute wird der Begriff allgemeiner für diverse Themen aus der Informationssicherheit verwendet.</p>\n    <p>Unter einem kryptographisch sicheren (oder auch nur kurz kryptographischem) Schlüssel versteht man eine zufällig generierte lange Zahl, die auch über Weitergabe von daraus generierten Schlüsseln selbst nicht zurückverfolgt werden kann.</p>\n    <p>Insofern ist erst recht keine Rückverfolgung zu dem Smartphone oder gar dem Besitzer des Smartphones möglich. „Nicht möglich“ in diesem Kontext heißt, dass bei den hier verwendeten Verfahren \n    heute bekannte Computerprogramme unrealistisch lange (sehr viele Jahre) für Rückberechnungen bräuchten.</p>\n    <p>Das hier angewendete mathematische Verfahren zur Erzeugung der Nahbereichskennungen aus den Tages-Schlüsseln nennt sich (kryptographische) Hashfunktion. \n    Das sind mathematische „Einwegfunktionen“, das heißt solche, bei denen aus einem Schlüssel in nicht umkehrbarer Weise ein Zielwert abgeleitet werden kann.</p>\n    <p>In der Anwendung auf Ihrem Smartphone werden aus dem jeweils aktuellen Tages-Schlüssel die Nahbereichskennungen abgeleitet.</p>\n    <p>Aus den Tages-Schüsseln eines Infektionsträgers kann Ihr Smartphone die Nahbereichskennungen dieses Smartphones selbst ableiten – das ist platzsparender, als wenn alle Nahbereichskennungen veröffentlicht und übertragen werden müssten.</p>\n    </div>"
+    },
+    {
+      "id": "g2",
+      "keywords": [
+        "Nahbereichskennung",
+        "Nahbereichskennungen",
+        "wechselnde Nahbereichskennung",
+        "wechselnde Nahbereichskennungen"
+      ],
+      "title": "Wechselnde Nahbereichskennung (Rolling Proximity Identifier)",
+      "content": "<div>\n    <p>Eine Nahbereichskennung ist eine Smartphone-individuelle Kennung, die über Bluetooth von einem Smartphone (wenn die Corona-Warn-App installiert ist) gesendet wird und in einer Entfernung von bis zu ca. 10 Metern zu empfangen ist.</p>\n    <p>Die Nahbereichskennungen wechseln alle 15 Minuten. Sie werden von Smartphones, welche ebenfalls die Corona-Warn-App installiert haben, empfangen und im lokalen Kontaktprotokoll gespeichert.</p>\n    </div>"
+    },
+    {
+      "id": "g3",
+      "keywords": [
+        "Smartphone",
+        "Smartphones"
+      ],
+      "title": "Smartphone",
+      "content": "<div>\n    <p>Die Corona-Warn-App ist eine komplexe technische Anwendung, die für ihren zuverlässigen Betrieb ein aktuelles Smartphone mit gewissen Eigenschaften benötigt.</p>\n    <p>Die verwendeten Smartphones müssen auf Basis von iOS oder Android laufen und aktuelle Updates der Betriebssysteme unterstützen.</p>\n    </div>"
+    },
+    {
+      "id": "g5",
+      "keywords": [
+        "Kontaktprotokoll",
+        "lokales Kontaktprotokoll",
+        "lokalen Kontaktprotokoll"
+      ],
+      "title": "Kontaktprotokoll",
+      "content": "<div>\n    <p>Ihr Smartphone speichert die Nahbereichskennungen von allen anderen Smartphones, die es über Bluetooth empfängt, im sogenannten lokalen Kontaktprotokoll.</p>\n    <p>Diese Liste verbleibt bis zur Löschung nur auf Ihrem Smartphone, sie wird nie weitergegeben. Jeder Kontakt wird nach 14 Tagen gelöscht.</p>\n    </div>"
+    },
+    {
+      "id": "g6",
+      "keywords": [
+        "Täglich wechselnder Schlüssel",
+        "Tages-Schlüssel",
+        "Tages-Schlüsseln",
+        "täglich wechselnde Schlüssel"
+      ],
+      "title": "Täglich wechselnder Schlüssel (Temporary Exposure Key)",
+      "content": "<div>\n    <p>Täglich wechselnde Schlüssel sind lange, zufällige Zahlen, die einmal täglich von allen Smartphones erzeugt werden, auf denen die Corona-Warn-App installiert ist. Diese Zahlen haben 39 Stellen (genauer 128bit) und sind somit extrem groß.</p>\n    <p>Diese täglichen Schlüssel dienen als Basis, um die alle 15 Minuten wechselnden Nahbereichskennungen inklusive der verschlüsselten Metadaten zu erzeugen, die per Bluetooth ausgesendet werden.</p>\n    <p>Die täglich erzeugten Schlüssel sind unabhängig voneinander, da jeden Tag eine neue Zufallszahl erzeugt wird. Auch gibt es keinen Bezug zum Smartphone, auf dem sie erzeugt werden, da es reine Zufallswerte sind.</p>\n    <p>Die Länge des Schlüssels ist so gewählt, dass aktuelle Smartphones solche Zahlen noch unproblematisch erzeugen und im Infektionsfall übermitteln können, andererseits aber das Risiko einer zufälligen Übereinstimmung \n    zweier solcher Schlüssel auf unterschiedlichen Smartphones extrem gering bleibt. Es ist sehr wichtig, dass keine Dopplungen auftreten, da diese Schlüssel im Infektionsfall dazu dienen, einen Kontakt mit dieser Person ermitteln zu können.</p>\n    </div>"
+    },
+    {
+      "id": "g7",
+      "keywords": [
+        "Metadaten",
+        "verschlüsselte Metadaten",
+        "verschlüsselten Metadaten"
+      ],
+      "title": "Verschlüsselte Metadaten (Associated Encrypted Metadata)",
+      "content": "<div>\n    <p>Die verschlüsselten Metadaten sind Daten, die zur Beurteilung notwendig sind, ob ein epidemiologisch relevantes Kontaktereignis stattgefunden hat.</p>\n    <p>Die Metadaten enthalten Informationen, mit denen z.B. die ungefähre Entfernung zum sendenden Gerät anhand der per Bluetooth empfangenen Signalstärke berechnet werden kann.</p>\n    <p>Die Entfernung zum anderen Smartphone ist ein wichtiges Merkmal bei der Beurteilung, ob eine Ansteckung stattgefunden haben kann. Die Sendeleistung per Bluetooth ist aber stark vom Modell des sendenden Smartphones abhängig, daher müssen zusätzlich zur Nahbereichskennung begleitende Informationen über die Sendeleistung des Smartphones hinzugefügt werden.</p>\n    <p>Dieses zusätzliche Datenpaket ist so verschlüsselt, dass es nur im Falle einer Infektionsmeldung des Senders, und damit einer Offenlegung seiner Tages-Schlüssel, entschlüsselt werden kann. Ohne eine Infektion des Senders sind diese Zusatzinformationen irrelevant, da die Entfernung zum Sender niemals berechnet werden muss.</p>\n    <p>Die Metadaten lassen vermutlich Rückschlüsse auf das Smartphone des jeweiligen Gegenübers zu, daher ist es aus Datenschutzgründen sinnvoll, sie so zu verschlüsseln, dass sie nur in dem Fall, indem sie benötigt werden, auch entschlüsselt werden können.\n    </div>"
+    },
+    {
+      "id": "g8",
+      "keywords": [
+        "Bluetooth"
+      ],
+      "title": "Bluetooth",
+      "content": "<div>\n    <p>Bluetooth ist ein in den 1990er Jahren entwickelter Industriestandard für die Datenübertragung zwischen Geräten über kurze Distanz per Funktechnik.</p>\n    <p>Bluetooth gehört bei modernen Smartphones zur Standardausstattung um Verbindungen mit anderen Bluetooth-fähigen Geräten herzustellen, z.B. kabellose Kopfhörer.</p>\n    <p>Für die Corona-Warn-App wird Bluetooth Low Energy (BLE) verwendet, eine Erweiterung der Bluetooth Funktechnik aus dem Jahr 2009, die sehr energieeffizient ist. Daher ist auch die Reichweite \n    des Funksignales entsprechend beschränkt, was in diesem Fall sogar erwünscht ist.</p>  \n    </div>"
+    },
+    {
+      "id": "g9",
+      "keywords": [
+        "epidemiologisch relevantes",
+        "epidemiologisch relevant",
+        "epidemiologisch relevanter Kontakt",
+        "epidemiologisch relevanten Kontakt"
+      ],
+      "title": "Epidemiologisch relevanter Kontakt",
+      "content": "<div>\n    <p>Ein Kontakt gilt als epidemiologisch relevant, wenn sich durch den Kontakt gegebenenfalls Personen infiziert haben könnten.</p>\n    <p>Epidemiologisch relevante Kontakte sind nach heutigem Kenntnisstand solche, zu denen Sie sich in einer Entfernung von unter 1,5 Metern 15 Minuten oder länger aufgehalten haben.</p>\n    </div>"
+    },
+    {
+      "id": "g11",
+      "keywords": [
+        "Hashfunktion",
+        "Hash-Funktion",
+        "Hash-Funktionen"
+      ],
+      "title": "Hash-Funktionen",
+      "content": "<div>\n    <p>Hash-Funktionen sind mathematische <em>Einwegfunktionen</em>, das heißt solche, bei denen aus einem Schlüssel in nicht umkehrbarer Weise ein Zielwert abgeleitet werden kann.</p>\n    </div>"
+    },
+    {
+      "id": "g12",
+      "keywords": [
+        "zentrales Verzeichnis"
+      ],
+      "title": "Zentrales Verzeichnis",
+      "content": "<div>\n    <p>Das zentrale Verzeichnis ist ein Serverdienst, der alle Tages-Schlüssel von infizierten Personen über einen Zeitraum von 14 Tagen zur Verfügung stellt.</p>\n    <p>Diese Sammlung von Tages-Schlüsseln wird regelmäßig von jedem Smartphone, auf dem die Corona-Warn-App installiert ist, heruntergeladen. Anschließend werden von jedem Smartphone aus den Tages-Schlüsseln die dazugehörigen \n    Nahbereichskennungen erzeugt und mit den empfangenen Nahbereichskennungen im lokalen Kontaktprotokoll verglichen. Eine dabei gefundene Übereinstimmung bedeutet einen Kontakt mit einem Infizierten.\n    Je nach Dauer und Entfernung dieses Kontaktereignisses, wird es ggf. als epidemiologisch relevant eingestuft und eine Warnmeldung erzeugt.</p>\n    </div>"
+    },
+    {
+      "id": "g13",
+      "keywords": [
+        "Kontaktereignisses",
+        "Kontaktereignissen",
+        "Kontaktereignisse",
+        "Kontaktereignis",
+        "Kontaktpersonen",
+        "Kontaktperson"
+      ],
+      "title": "Kontaktereignis",
+      "content": "<div>\n    <p>Als Kontakte werden in der Corona-Warn-App Begegnungen mit Personen bezeichnet, die ebenfalls die Corona-Warn-App installiert haben. Die beteiligten Smartphones tauschen dann ihre jeweiligen Nahbereichskennungen aus.</p>\n    <p>Die Bezeichnung Kontakt bezieht sich ausdrücklich nicht auf die Kontakte in Ihrem Adressbuch, auf die die Corona-Warn-App auch keinen Zugriff hat.</p>\n    <p>Ein Kontaktereignis stellt demnach die Begegnung zweiter Smartphones dar, die jeweils die Dauer und die ungefähre Entfernung in ihrem lokalen Kontaktprotokoll speichern. Auf Basis dieser Daten und der heruntergeladenen\n    Tages-Schlüssel von infektiösen Personen kann zu einem späteren Zeitpunkt abgeglichen werden, ob ein Kontakt mit einer infektiösen Person stattgefunden hat.</p>\n    </div>"
+    },
+    {
+      "id": "g14",
+      "keywords": [
+        "Infektionskette"
+      ],
+      "title": "Infektionskette",
+      "content": "<div>\n    <p>Unter der Infektionskette versteht man die Ausbreitung des Virus von einem Infizierten auf Kontaktpersonen, dann Kontaktpersonen von Kontaktpersonen etc.</p>\n    <p>Die Corona-Warn-App unterstützt die Unterbrechung solcher Infektionsketten, indem sie zum einen namentlich nicht bekannte Kontaktpersonen dennoch warnt und zum anderen \n    in vielen Fällen schneller ist, als dies in einem von Menschen abhängenden Prozess machbar ist.</p>\n    </div>"
+    },
+    {
+      "id": "g15",
+      "keywords": [
+        "pseudonym",
+        "Pseudonym",
+        "Pseudoanonymisierung"
+      ],
+      "title": "Pseudoanonymisierung",
+      "content": "<div>\n    <p>Bei der Pseudoanonymisierung versteht man die Verarbeitung personenbezogener Daten in einer Weise, dass der Personenbezug ohne Hinzuziehung zusätzlicher Informationen nicht mehr hergestellt \n    werden kann, diese zusätzlichen Informationen aber gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten \n    nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.</p>\n    </div>"
+    },
+    {
+      "id": "g16",
+      "keywords": [
+        "anonym",
+        "Anonymisierung"
+      ],
+      "title": "Anonymisierung",
+      "content": "<div>\n    <p>Die Anonymisierung ist das Verändern personenbezogener Daten derart, dass diese Daten nicht mehr oder nur mit einem unverhältnismäßig großen Aufwand an Zeit, Kosten und Arbeitskraft einer Person zugeordnet werden können.</p>\n    </div>"
+    },
+    {
+      "id": "g20",
+      "keywords": [
+        "Kontaktaufzeichnungs-Mechanismus",
+        "Kontaktaufzeichnung",
+        "Exposure Notification API"
+      ],
+      "title": "Kontaktaufzeichnungs-Mechanismus (Exposure Notification API)",
+      "content": "<div>\n    <p>Der Kontaktaufzeichnungs-Mechanismus ist ein von Google und Apple in das jeweilige Betriebssystem eingebaute Software-Modul.</p>\n    <p>Es ermöglicht den hier beschriebenen Mechanismus zur Kontaktaufzeichnung der die Risikoermittlung durch die App ermöglicht und stellt die dafür notwendigen Funktionen innerhalb des Betriebssystems des Smartphones zur Verfügung.</p>\n    <p>Die dafür notwendigen Funktionen sind im Detail beschrieben (siehe Quellenverzeichnis in der Legende) und dienen lediglich dem vorgesehenen Zweck der Erkennung von Speicherung von möglichen Kontaktereignissen.</p>\n    <p>Die Kontaktaufzeichnungs-Funktionen sind kein Bestandteil der Corona-Warn-App sondern werden Ihnen von Apple (iPhones) bzw. Google (Android-Smartphones) bereitgestellt. Sie unterliegen dementsprechend den Datenschutzbestimmungen dieser Unternehmen.</p>\n    </div>"
+    },
+    {
+      "id": "g21",
+      "keywords": [
+        "QR-Codes",
+        "QR-Code"
+      ],
+      "title": "QR-Code",
+      "content": "<div>\n    <p>Ein QR-Code ist ein zweidimensionaler, maschinenlesbarer Code, ähnlich einem Bar-Code, der von Smartphones durch Verwendung der Kamera gelesen werden kann. Durch einen QR-Code können beliebige, von der Länge begrenzte Informationen dargestellt werden.</p>\n    <p>Im Falle der Corona-Warn-App werden QR-Codes zur Identifikation von Proben bei der Testung auf Covid-19 verwendet. Die durch den QR-Code dargestellte Proben-ID ist eine eindeutige Zahl, die nur dieser einen Covid-19 Probe zugeordnet ist und vom Labor verwendet wird, um das Ergebnis der Laboruntersuchung mitzuteilen.</p>  \n    </div>"
+    },
+    {
+      "id": "g22",
+      "keywords": [
+        "Testergebnis-Server"
+      ],
+      "title": "Testergebnis-Server",
+      "content": "<div>\n    <p>Der Testergebnis-Server ist ein Bestandteil der IT-Infrastruktur der Corona-Warn-App. Dieser Server ist für die Verwaltung und Speicherung von Laborergebnissen zuständig.</p>\n    <p>Die auf diesem Server gespeicherten Daten umfassen die Proben-IDs (eindeutige Zahlen welche die Proben identifiziert) und das Ergebnis der Tests an sich.</p>\n    <p>Die Corona-Warn-App stellt ihre Anfragen nicht an diesen Server direkt, sondern an den Verifizierungs-Server. Dieser stellt sicher, dass die Anfrage berechtigt ist, sprich der Anfragende auch zu dieser Proben-ID das zugehörige Laborergebnis erhalten darf.</p> \n    <p>Der Server teilt dem Verifizierungs-Server dann das zu einer Anfrage passende Laborergebnis mit.</p>   \n    </div>"
+    },
+    {
+      "id": "g23",
+      "keywords": [
+        "Verifizierungs-Server"
+      ],
+      "title": "Verifizierungs-Server",
+      "content": "<div>\n    <p>Der Verifizierungs-Server ist ein Bestandteil der IT-Infrastruktur der Corona-Warn-App. Dieser Server ist für die Autorisierung anfragender Smartphones sowie die Erzeugung von TANs zuständig.</p>\n    <p>Dieser Server ermöglicht u.a. die Registrierung eines QR-Codes einer Covid-19 Probe zum Zweck des späteren Abrufs des Testergebnisses. Des Weiteren erzeugt er TANs, mit denen ein Smartphone dann die Infektionsmeldung durchführen kann.</p>\n    <p>Er stellt im Wesentlichen sicher, dass ausschließlich berechtigte Personen Zugriff auf die ihnen zugeordneten Testergebnisse erhalten und dass nur positiv getestete Personen eine Infektionsmeldung durchführen können.</p>   \n    </div>"
+    },
+    {
+      "id": "g24",
+      "keywords": [
+        "Corona-Warn-Server"
+      ],
+      "title": "Corona-Warn-Server",
+      "content": "<div>\n    <p>Der Corona-Warn-Server ist ein Bestandteil der IT-Infrastruktur der Corona-Warn-App. Dieser Server ist für die Entgegennahme von Infektionsmeldungen und den darin enthaltenen Diagnose-Schlüsseln zuständig.</p>\n    <p>Er sorgt regelmäßig für die korrekte Zusammenfassung der aktuell als infektiös gemeldeten Diagnose-Schlüssel und stellt die aktuellen Kalibrierungs-Einstellungen für die Berechnung des Infektions-Risikos zur Verfügung.</p>\n    <p>Sowohl der aktuelle Satz an Diagnose-Schlüsseln als auch der aktuelle Satz von Kalibrierungs-Einstellungen wird vom Corona-Warn-Server über ein Content-Delivery-Network (CDN) für alle Smartphones mit Corona-Warn-App zum Download zur Verfügung gestellt.</p> \n    </div>"
+    },
+    {
+      "id": "g25",
+      "keywords": [
+        "Diagnose-Schlüsseln",
+        "Diagnose-Schlüssel"
+      ],
+      "title": "Diagnose-Schlüssel",
+      "content": "<div>\n    <p>Die Diagnose-Schlüssel sind die bei einer Infektionsmeldung an den Corona-Warn-Server übermittelten Schlüssel. Es handelt sich dabei um die Tages-Schlüssel der letzten 14 Tage vor der Infektionsmeldung.</p>\n    <p>Der Corona-Warn-Server stellt alle Diagnose-Schlüssel der letzten 14 Tage zum Download durch die Corona-Warn-App zur Verfügung.</p>\n    <p>Die App wird dadurch in die Lage versetzt, automatisch und eigenständig entscheiden zu können, ob ein Kontaktereignis mit einer infektiösen Person vorlag.</p> \n    </div>"
+    },
+    {
+      "id": "g26",
+      "keywords": [
+        "TANs",
+        "TAN"
+      ],
+      "title": "TAN",
+      "content": "<div>\n    <p>Eine TAN ist ein eindeutiger Code, der zur Autorisierung einer Aktion verwendet wird. TANs sind z.B. aus dem Online-Banking bekannt, wo sie zur Autorisierung von Überweisungen verwendet werden.</p>\n    <p>Im Falle der Corona-Warn-App ist eine TAN zur Autorisierung der Infektionsmeldung notwendig, damit keine falschen Infektionsmeldungen vorgenommen werden können, obwohl keine Infektion vorliegt.</p>\n    </div>"
+    },
+    {
+      "id": "g27",
+      "keywords": [
+        "Bewertungsalgorithmus"
+      ],
+      "title": "Bewertungsalgorithmus ",
+      "content": "<div>\n    <p>Die Ermittlung des Infektionsrisikos wird innerhalb der Corona-Warn-App durch einen Bewertungsalgorithmus vorgenommen. Er betrachtet unterschiedliche Aspekte die jeweils epidemiologisch relevant sind. Die Aspekte und deren Ausprägungen werden mit Hilfe sogenannter Kalibrierungs-Einstellungen gewichtet und fließen somit stärker oder schwächer in die Berechnung ein. \n      Diese Einstellungen werden jeweils dem aktuellen Erkenntnisstand angepasst und vom Robert Koch-Institut (RKI) zur Verfügung gestellt. Die relevanten Aspekte sind im Detail:\n      <ul>\n        <li>Die Anzahl der Tage (0..14) seit dem potentiell infektiösen Kontaktereignis.</li>   \n        <li>Die Dauer des Kontaktereignisses (5 bis 30 Minuten). Falls mehrere Kontaktereignisse mit derselben Person innerhalb eines Tages stattgefunden haben, werden die Risiken addiert.</li>   \n        <li>Die Signalstärke des empfangenen Bluetooth-Signals. Hierbei wird die Differenz aus der Sendeleistung des sendenden Smartphones und der empfangenen Signalstärke gebildet.</li>   \n        <li>Übertragungsrisiko-Wert der infizierten Person. Bei Meldung der Infektion kann zu jedem Diagnoseschlüssel ein Wert zwischen 1 (=niedrig) und 8 (=hoch) mitgesendet werden, der das Risiko der Person als Überträger an diesem speziellen Tag beschreibt. So kann z.B. abgebildet werden, dass eine infizierte Person seit Infektionsbeginn an bestimmten Tagen innerhalb des 14 Tage-Zeitraums infektiöser ist als an anderen.</li>\n      </ul>    \n    </p>\n    <p>Die Risikowerte der Einzelaspekte werden multiplikativ zusammengefasst. Sie ergeben für jede infektiöse Person mit der Kontakt bestand ein Infektionsrisiko.</p>\n    <p>Die Ergebnisse werden zu einem einfachen verständlichen Risiko-Level zusammengefasst (\"niedriges Risiko\" oder \"erhöhtes Risiko\"), das dann durch die Corona-Warn-App angezeigt wird.</p>\n    </div>"
+    },
+    {
+      "id": "g28",
+      "keywords": [
+        "Zugriffsdaten"
+      ],
+      "title": "Zugriffsdaten",
+      "content": "<div>\n    <p>Bei jeder Kommunikation der App mit dem Serversystem fallen auf den Servern folgende Daten an: \n    <ul>\n      <li>Ihre IP-Adresse</li>\n      <li>Datum und Uhrzeit der Kommunikation</b>  \n      <li>übertragene Datenmenge</b> \n      <li>Meldung über Datenabruf oder Infektionsmeldung</b>\n    </ul>\n    Ihre IP-Adresse wird auf dem vorgelagerten Load Balancer maskiert und im Weiteren nicht mehr innerhalb des Serversystems der App verarbeitet.</p> \n    <p>Die weiteren Zugriffsdaten werden nur zur Sicherung und Aufrechterhaltung der technischen Infrastruktur verarbeitet. Sie werden dabei nicht als Nutzer der App persönlich identifiziert und es kann kein Nutzungsprofil erstellt werden.</p>\n    </div>"
+    },
+    {
+      "id": "g29",
+      "keywords": [
+        "Gesundheitsdaten"
+      ],
+      "title": "Gesundheitsdaten",
+      "content": "<div>\n    <p>Gesundheitsdaten sind personenbezogenen Daten, die Informationen zum Gesundheitszustand einer bestimmten Person enthalten. Dazu gehören nicht nur Angaben zu früheren und aktuellen Krankheiten, sondern auch zu Krankheitsrisiken einer Person.</p>\n    <p>Gesundheitsdaten werden in der Corona-Warn-App bzw. auf den Serversystemen in folgenden Fällen verarbeitet: \n    <ul>\n      <li><b>Risikoermittlung:</b> Wenn durch die Corona-Warn-App auf Ihrem Smartphone Ihr Infektionsrisiko berechnet wird. Das jeweils aktuelle errechnete Infektionsrisiko wird grundsätzlich nur auf Ihrem Smartphone gespeichert. Nur falls Sie sich entschließen, Ihre Infektion zu melden, wird der Gesundheitszustand auch an die Serversysteme der Corona-Warn-App übertragen.</li>\n      <li><b>Testregistrierung:</b> Wenn Sie den QR-Code Ihres Tests mit der Corona-Warn-App einscannen, um sich automatisch über das Testergebnis benachrichtigen zu lassen.</li>  \n      <li><b>Infektionsmeldung:</b> Falls Sie eine Infektionsmeldung veranlassen, wird der Gesundheitszustand an die Serversysteme der Corona-Warn-App übertragen. Die Meldung enthält aber lediglich die Diagnose-Schlüssel, die notwendig sind, um andere Personen warnen zu können.</li>\n    </ul>\n    </p>\n    <p>Im Übrigen gibt das RKI personenbezogene Daten, die im Zusammenhang mit der Nutzung der App erhoben werden, nur an Dritte weiter, soweit das RKI rechtlich dazu verpflichtet ist oder die Weitergabe im Falle von Angriffen auf die technische Infrastruktur der App zur Rechts- oder Strafverfolgung erforderlich ist. Eine Weitergabe in anderen Fällen erfolgt grundsätzlich nicht.</p>\n    </div>"
+    }
+  ],
+  "isDialogFullsize": true,
+  "isDetailedIcons": false,
+  "fixedLabels": {
+    "headerSource": "Welche Daten werden erfasst",
+    "headerPurpose": "Welche Ziele werden verfolgt",
+    "headerProcess": "Welche Prozesse werden umgesetzt",
+    "detailedModel": "Ausführliche Ansicht",
+    "simpleModel": "Vereinfachte Ansicht",
+    "legend": "Legende",
+    "policy": "Dauer und Ort der Speicherung",
+    "durationOfStorage": "Dauer der Speicherung",
+    "locationOfStorage": "Ort der Speicherung",
+    "permissions": "Benötigte Rechte im Smartphone",
+    "listOfSources": "Quellenverzeichnis",
+    "revisionHistory": "Änderungshistorie",
+    "info": "weitere Informationen",
+    "close": "Schließen"
+  },
+  "colors": {
+    "canvasBackground": "white",
+    "headerSourceLabel": "white",
+    "headerSourceIcon": "white",
+    "headerSourceBackground": "url(#CoronaGradient1)",
+    "headerSourceArrowBackground": "#b4daf1",
+    "headerProcessLabel": "white",
+    "headerProcessIcon": "white",
+    "headerProcessBackground": "url(#CoronaGradient_middle)",
+    "headerProcessArrowLeftBackground": "#b4daf1",
+    "headerProcessArrowRightBackground": "#b07894",
+    "headerPurposeLabel": "white",
+    "headerPurposeIcon": "white",
+    "headerPurposeBackground": "url(#CoronaGradient2)",
+    "headerPurposeArrowBackground": "#b07894",
+    "caseHeaderLabel": "#3A3D3E",
+    "caseHeaderIcon": "3A3D3E",
+    "caseHeaderBackground": "#b4daf1",
+    "caseHeaderBackgroundGradient": "url(#CoronaGradient3)",
+    "caseBodyBackground": "#E9F4FB",
+    "caseBorder": "white",
+    "participantLabel": "#3A3D3E",
+    "participantIcon": "#3A3D3E",
+    "participantBorder": "#a9d5ef",
+    "participantBackground": "#d4eaf7",
+    "participantBackgroundGradient": "url(#blue_gradient)",
+    "caseActionIdentifierChecked": "#80CDEC",
+    "caseActionIdentifierUnchecked": "#AF4261",
+    "actionShortInfoBackground": "#DEDEDE",
+    "actionShortInfoRelatedBackground": "#BC1200",
+    "actionInfoIcon": "#7D7D7D",
+    "actionPolicyIcon": "#7D7D7D",
+    "actionRelatedPolicyIcon": "#BC1200",
+    "legendTriggerLabel": "white",
+    "legendTriggerBackground": "#AF4261",
+    "legendTriggerBackgroundHover": "#8BACCB",
+    "modelModeLabel": "white",
+    "modelModeBackground": "#AF4261",
+    "textEllipsisBackground": "#BC1200",
+    "textEllipsisLabel": "#fff",
+    "policyBackground": "#BC1200",
+    "policyIcon": "#fff",
+    "policyLabel": "#fff",
+    "glossarKeyword": "#000"
+  }
+}

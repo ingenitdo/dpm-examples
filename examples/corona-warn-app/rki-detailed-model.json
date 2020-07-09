@@ -1,0 +1,1475 @@
+{
+  "language": "de",
+  "participants": [
+    {
+      "id": "1",
+      "label": [
+        "Eigenes",
+        "Smartphone"
+      ]
+    },
+    {
+      "id": "2",
+      "label": [
+        "Smartphones von",
+        "Kontaktpersonen"
+      ]
+    },
+    {
+      "id": "3",
+      "label": [
+        "Dritte"
+      ]
+    }
+  ],
+  "connectionTypes": [
+    {
+      "id": "ct1",
+      "color": "#7D7D7D",
+      "textColor": "white",
+      "legend": true,
+      "legendOrder": 1,
+      "legendLabel": "Datenfluss",
+      "default": true
+    },
+    {
+      "id": "ct2",
+      "color": "#7D7D7D",
+      "textColor": "white",
+      "strokeDasharray": "6, 6",
+      "legend": false,
+      "legendOrder": 2,
+      "legendLabel": "Pseudonyme Daten"
+    },
+    {
+      "id": "ct3",
+      "color": "#7D7D7D",
+      "textColor": "white",
+      "strokeDasharray": "3, 3",
+      "legend": true,
+      "legendOrder": 3,
+      "legendLabel": "Anonyme Daten"
+    }
+  ],
+  "boxTypes": [
+    {
+      "id": "bt-default",
+      "color": "#80CDEC",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#F2F2F2",
+      "textColorInactive": "#BC1200",
+      "legend": true,
+      "legendOrder": 4,
+      "legendLabel": "Erhobene / verarbeitete Daten & Zweck der Verarbeitung",
+      "sourceDefault": true,
+      "purposeDefault": true,
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-ds-opt-in",
+      "color": "#73B4E6",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#B3DEFF",
+      "textColorInactive": "#BC1200",
+      "legend": false,
+      "legendOrder": 5,
+      "legendLabel": "Nur mit Zustimmung des Nutzers erhobene / verarbeitete Daten",
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-ds-notprocessed",
+      "color": "#FFC4C5",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#FFDEDE",
+      "textColorInactive": "#BC1200",
+      "legend": true,
+      "legendOrder": 6,
+      "legendLabel": "Nicht erhobene und verarbeitete Daten",
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-action",
+      "color": "#80CDEC",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#F5F5F5",
+      "textColorInactive": "#BC1200",
+      "actionDefault": true,
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    },
+    {
+      "id": "bt-action-warn",
+      "color": "#FFBF1F",
+      "textColor": "#3A3D3E",
+      "colorInactive": "#DEDEDE",
+      "textColorInactive": "#BC1200",
+      "infoIconBackground": "#7D7D7D",
+      "infoIconActiveBackground": "#3A3D3E",
+      "policyIconBackground": "#7D7D7D",
+      "policyIconActiveBackground": "#3A3D3E"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case1",
+      "label": "Kontaktaufzeichnung und Risikoermittlung",
+      "info": "\n          <div>\n            <p>Dieser Fall stellt alle relevanten Mechanismen dar, die für die Risikoermittlung und <span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> per <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span> verwendet werden.</p>\n            <p>Es wird an dieser Stelle der \"Normalfall\" darstellt, bei dem weder Sie noch eine Person, mit der Sie in Kontakt waren, infiziert sind bzw. werden.</p>\n            <p>Die anderen Fälle (Infektion bei Ihnen, Infektion einer <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktperson</span>) werden weiter unten dargestellt.</p>\n            <p>Die Risikoermittlung und damit auch die Aufzeichnung von <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignissen</span> per <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span> muss von Ihnen einmalig aktiviert werden und kann von Ihnen jederzeit wieder deaktiviert werden.</p>\n          </div>\n        ",
+      "permissions": "\n          <div>\n            <p>Benötigte Berechtigungen für diesen Bereich der Corona-Warn-App:</p>\n            <p><ul>\n            <li><b>Internet:</b> Internetzugriff wird benötigt um mit den Serversystemen der App zu kommunizieren. Diese Kommunikation wird für die Risiko-Ermittlung, den Abruf von Testergebnissen sowie für Infektionsmeldungen benötigt.</li>            \n            <li><b>Erlaubnis der <span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> per <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span>:</b> Wird benötigt, um den im Betriebssystem des <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> eingebauten <span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnungs-Mechanismus</span> grundsätzlich zu aktivieren.</li>            \n            <li><b>Standortermittlung (nur Android <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span>):</b> Wird benötigt, um nach <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span>-Signalen anderer <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> suchen zu können. Standortdaten werden dabei nicht erhoben.</li>            \n            <li><b>Kamera:</b> Wird benötigt, falls Sie den <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> Ihres Tests mit der Corona-Warn-App einscannen möchten, um sich automatisch über das Testergebnis benachrichtigen zu lassen.</li>\n            <li><b>Anzeigen von Benachrichtigungen:</b> Wird benötigt, um Sie im Fall einer möglichen Infektion mittels einer Warnmeldung auf Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> zu benachrichtigen.<br />\n            Diese Berechtigung wird auch benötigt, wenn sie im Falle eines Corona-Tests den <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> nutzen, um sich automatisch über das Testergebnis benachrichtigen zu lassen.</li>\n            <li><b>Hintergrundbetrieb:</b> Wird benötigt, um die Risiko-Berechnung automatisch durchzuführen und die Abfrage von Testergebnissen vorzunehmen.</li>\n            </ul></p>\n          </div>\n        ",
+      "dataSources": [
+        {
+          "id": "1-ds1",
+          "typeId": "bt-default",
+          "label": [
+            "Sichere Schlüssel und regelmäßig wechselnde Nahbereichskennungen"
+          ],
+          "info": "\n          <div>\n            <p>Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> erzeugt zufällige, <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">täglich wechselnde Schlüssel</span> und davon abgeleitete, regelmäßig <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">wechselnde Nahbereichskennungen</span>.</p>\n            <p>Die <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> lassen sich aus den täglich wechselnden Schlüsseln berechnen. Aus den <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> allerdings können die <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> NICHT ermittelt werden.</p> \n            <p>Die verwendeten mathematischen Verfahren sind <span id=\"g1\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">kryptographisch sicher</span>, für weitere Details siehe Glossar.\n            <p>Die <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> werden per Funksignal Ihres <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> mittels <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span> übertragen und sind bis zu einer Entfernung von ca. 10 Metern zu empfangen.</p>\n            <p><span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> im näheren Umfeld können diese <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> empfangen und verarbeiten. Gleichzeitig senden diese <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> ihre eigenen <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> aus, die wiederum Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> empfangen kann.</p>\n            <p>Aus der empfangenen Signalstärke kann mit Hilfe von <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span>, die zusammen mit der <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennung</span> ausgesendet werden, näherungsweise der Abstand zwischen den <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> berechnet werden.</p>\n            <p>Die <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennung</span> wird alle 15 Minuten gewechselt. Sie wechselt in dieser Häufigkeit, damit eine einzelne Person nicht über einen längeren Zeitraum dieselbe Kennung aussendet und anhand dieser Kennung ggf. an unterschiedlichen Orten wiedererkannt werden kann.</p>\n            <p>Die Erzeugung der Schlüssel ist „<span id=\"g1\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">kryptographisch sicher</span>“, was unter anderem bedeutet, dass die Schlüssel und die daraus abgeleiteten <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> keine Rückschlüsse auf Sie und Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> zulassen.</p>\n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 1
+          },
+          "infoTitle": "Sichere Schlüssel und regelmäßig <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">wechselnde Nahbereichskennungen</span>"
+        },
+        {
+          "id": "1-ds2",
+          "typeId": "bt-default",
+          "label": [
+            "Empfangene Nahbereichskennungen"
+          ],
+          "info": "\n          <div>\n            <p>Analog zu Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> generieren auch alle anderen Verwender der Corona-Warn-App über das gleiche Verfahren ihre jeweiligen <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> und übermitteln diese per <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span>.</p>\n          </div>\n        ",
+          "position": {
+            "start": 2,
+            "end": 2
+          },
+          "infoTitle": "Empfangene <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span>"
+        },
+        {
+          "id": "1-ds3",
+          "typeId": "bt-default",
+          "label": [
+            "Einstellungen zur Risiko-Berechnung"
+          ],
+          "info": "\n          <div>\n            <p>Die Ermittlung des Infektionsrisikos wird innerhalb der Corona-Warn-App durch einen <span id=\"g27\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bewertungsalgorithmus</span> vorgenommen. Er betrachtet unterschiedliche Aspekte die jeweils <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevant</span> sind. Die Aspekte und deren Ausprägungen werden mit Hilfe sogenannter Kalibrierungs-Einstellungen gewichtet und fließen somit stärker oder schwächer in die Berechnung ein. \n            Diese Einstellungen werden jeweils dem aktuellen Erkenntnisstand angepasst und vom Robert Koch-Institut (RKI) zur Verfügung gestellt. Die relevanten Aspekte sind im Detail:\n            <ul>\n             <li>Die Anzahl der Tage (0..14) seit dem potentiell infektiösen <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignis</span>.</li>   \n             <li>Die Dauer des <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignisses</span> (5 bis 30 Minuten). Falls mehrere <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignisse</span> mit derselben Person innerhalb eines Tages stattgefunden haben, werden die Risiken addiert.</li>   \n             <li>Die Signalstärke des empfangenen <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span>-Signals. Hierbei wird die Differenz aus der Sendeleistung des sendenden <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> und der empfangenen Signalstärke gebildet.</li>   \n             <li>Übertragungsrisiko-Wert der infizierten Person. Bei Meldung der Infektion kann zu jedem Diagnoseschlüssel ein Wert zwischen 1 (=niedrig) und 8 (=hoch) mitgesendet werden, der das Risiko der Person als Überträger an diesem speziellen Tag beschreibt. So kann z.B. abgebildet werden, dass eine infizierte Person seit Infektionsbeginn an bestimmten Tagen innerhalb des 14 Tage-Zeitraums infektiöser ist als an anderen.</li>\n            </ul>    \n            </p>\n            <p>Die Risikowerte der Einzelaspekte werden multiplikativ zusammengefasst. Sie ergeben für jede infektiöse Person mit der Kontakt bestand ein Infektionsrisiko.</p>\n            <p>Die Ergebnisse werden zu einem einfachen verständlichen Risiko-Level zusammengefasst (\"niedriges Risiko\" oder \"erhöhtes Risiko\"), das dann durch die Corona-Warn-App angezeigt wird.</p>\n          </div>\n        ",
+          "position": {
+            "start": 3,
+            "end": 3
+          },
+          "infoTitle": "Einstellungen zur Risiko-Berechnung"
+        },
+        {
+          "id": "1-ds4",
+          "typeId": "bt-default",
+          "label": [
+            "Liste der Tages-Schlüssel von aktuell infizierten Personen"
+          ],
+          "info": "\n          <div>\n            <p>Alle Nutzer der Corona-Warn-App haben die Möglichkeit, ihren Gesundheitsstatus auf „infiziert“ zu setzen und damit eine Infektionsmeldung zu veranlassen, wenn sie mit Covid-19 diagnostiziert wurden.</p>\n            <p>Hierzu müssen sie eine <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> verwenden, die Ihnen vom Gesundheitsamt mitgeteilt wird.</p>\n            <p>Hierzu werden sog. <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> an den <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> übertragen. Diese entsprechen den <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüsseln</span> der Tage an denen Sie ggf. infektiös waren und andere angesteckt haben könnten. Konkret sind dies die Tage-Schlüssel der letzten 14 Tage.\n            <p>Die Liste aller relevanten <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> von allen infizierten Personen wird vom <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> zur Verfügung gestellt. Jeder <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> verbleibt maximal 14 Tage auf dem Server.</p> \n            <p>Eine Rückverfolgung zu den <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> oder gar den Besitzern der <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> auf Basis der der <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> ist nicht möglich.</p>\n          </div>\n        ",
+          "position": {
+            "start": 4,
+            "end": 6
+          },
+          "infoTitle": "Liste der <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> von aktuell infizierten Personen"
+        }
+      ],
+      "dataPurposes": [
+        {
+          "id": "1-dp2",
+          "typeId": "bt-default",
+          "label": [
+            "Veröffentlichung im Infektionsfall",
+            "Ermöglicht nachträgliche Erkennung möglicher Infektionen"
+          ],
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "1-dp3",
+          "typeId": "bt-default",
+          "label": [
+            "Erkennung möglicher Infektionen bei Wahrung der Anonymität der betroffenen Personen"
+          ],
+          "position": {
+            "start": 1,
+            "end": 2
+          }
+        },
+        {
+          "id": "1-dp4",
+          "typeId": "bt-default",
+          "label": [
+            "Kalibrierung der Berechnung des Infektionsrisikos",
+            "Vermeidung unnötiger Warnmeldungen"
+          ],
+          "position": {
+            "start": 3,
+            "end": 3
+          }
+        },
+        {
+          "id": "1-dp5",
+          "typeId": "bt-default",
+          "label": [
+            "Regelmäßige Überprüfung, ob Kontakt zu einer infektiösen Person bestanden haben könnte",
+            "Berechnung des individuellen Infektionsrisikos"
+          ],
+          "position": {
+            "start": 4,
+            "end": 6
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "1-a2",
+          "typeId": "bt-action",
+          "label": [
+            "Erzeugung von Tages-Schlüsseln"
+          ],
+          "info": "<div>\n    <p><span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> sind lange, zufällige Zahlen, die einmal täglich von allen <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> erzeugt werden, auf denen die Corona-Warn-App installiert ist. Die erzeugten Zufallszahlen sind sehr lang, sie haben ca.39 Stellen (genauer 128bit).</p>\n    <p>Die <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> dienen als Basis, um die alle 15 Minuten wechselnden <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> inklusive der <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> zu erzeugen, die per <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span> ausgesendet werden.</p>\n    <p>Die täglich erzeugten Schlüssel sind unabhängig voneinander, da jeden Tag eine neue Zufallszahl erzeugt wird. Auch gibt es keinen Bezug zum <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span>, auf dem sie erzeugt werden, da es reine Zufallswerte sind.</p>\n    <p>Die Länge des Schlüssels ist so gewählt, dass aktuelle <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> solche Zahlen noch unproblematisch erzeugen und im Infektionsfall übermitteln können, andererseits aber das Risiko einer zufälligen Übereinstimmung \n    zweier solcher Schlüssel auf unterschiedlichen <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> extrem gering bleibt. Es ist sehr wichtig, dass keine Dopplungen auftreten, da diese Schlüssel im Infektionsfall dazu dienen, einen Kontakt mit dieser Person ermitteln zu können.</p>\n        </div>",
+          "erasurePolicy": "14 Tage",
+          "storagePolicy": "Eigenes Smartphone",
+          "participantID": "1",
+          "position": {
+            "start": 0,
+            "end": 0
+          },
+          "infoTitle": "Erzeugung von <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüsseln</span>"
+        },
+        {
+          "id": "1-a3",
+          "typeId": "bt-action",
+          "label": [
+            "Wechselnde Nahbereichskennung mit Metadaten"
+          ],
+          "infoTitle": "Erzeugung wechselnder <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> und verschlüsselter <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span>",
+          "info": "<div><p>Auf Basis des aktuell gültigen <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span>s wird alle 15 Minuten eine <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennung</span> erzeugt.</p>\n        <p>Die aktuell gültige <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennung</span> inkl. einiger <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselte Metadaten</span> wird per <span id=\"g8\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bluetooth</span> durch Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> ausgesendet und kann von <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> in Ihrer Nähe bis zu einer Entfernung von ca. 10 Metern empfangen werden.</p>\n        <p>Die <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> enthalten zusätzliche Informationen, die es zulassen die Entfernung zum sendenden <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> näherungsweise zu berechnen. \n        Da dies nur notwendig ist, wenn sich der Träger des aussenden <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> nachträglich als infiziert meldet, werden diese <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span> so verschlüsselt, \n        dass sie nur mit dem dann veröffentlichten <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> entschlüsselt werden können.</p> \n        <p>Auf Basis der <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> können keine Rückschlüsse auf Ihre <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> oder Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> gezogen werden.</p></div>",
+          "erasurePolicy": "keine Speicherung, da aus Tages-Schlüsseln berechenbar",
+          "storagePolicy": "",
+          "participantID": "1",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "1-a4",
+          "typeId": "bt-action",
+          "label": [
+            "Speicherung Ihrer wechselnden Nahbereichskennungen inkl. Metadaten"
+          ],
+          "info": "<div><p>Alle <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span>, auf denen die Corona-Warn-App aktiv ist und deren Abstand gering genug ist, tauschen gegenseitig die wechselnden <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> inkl. der <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> aus.</p>\n        <p>Empfangene <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> anderer <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> werden zusammen mit den <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span> für einen Zeitraum von 14 Tagen in einem sogenannten <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">lokalen Kontaktprotokoll</span> auf dem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> gespeichert.</p>\n        <p>Die gespeicherten <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> ermöglichen eine nachträgliche Erkennung möglicher Infektionen.</p> \n        <p>Die <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> können nur im Fall einer Infektionsmeldung des Senders entschlüsselt werden und ermöglichen dann die näherungsweise Berechnung des Abstands zwischen den <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span>.</p>\n        </div>",
+          "erasurePolicy": "14 Tage",
+          "storagePolicy": "Smartphones der Kontaktpersonen",
+          "participantID": "2",
+          "position": {
+            "start": 1,
+            "end": 1
+          },
+          "infoTitle": "Speicherung Ihrer wechselnden <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> inkl. <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span>"
+        },
+        {
+          "id": "1-a5",
+          "typeId": "bt-action",
+          "label": [
+            "Speicherung empfangener Nahbereichskennungen und Metadaten"
+          ],
+          "info": "<div><p>In einem sogenannten <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktprotokoll</span> auf Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> werden alle <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> inkl. der <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> der <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> in Ihrer Nähe mit Datum, Uhrzeit und Signalstärke gespeichert.</p>\n        <p>Die Signalstärke liefert zusammen mit den <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span> näherungsweise den Abstand, da dieser für die Einschätzung der Infektionsgefahr relevant ist. Der Abstand kann allerdings nur berechnet werden, wenn die <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span> entschlüsselt werden können. Dies ist nur dann möglich, wenn sich der Träger des aussenden <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> als infiziert gemeldet hat.</p></div>",
+          "erasurePolicy": "14 Tage",
+          "storagePolicy": "Eigenes Smartphone",
+          "participantID": "1",
+          "position": {
+            "start": 2,
+            "end": 2
+          },
+          "infoTitle": "Speicherung empfangener <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> und <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span>"
+        },
+        {
+          "id": "1-a6",
+          "typeId": "bt-action",
+          "label": [
+            "Nahbereichskennungen und Metadaten anderer Smartphones"
+          ],
+          "info": "<div><p>Wie in Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> generieren auch alle anderen Verwender der Corona-Warn-App über das gleiche Verfahren ihre wechselnden <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span>, die alle 15 Minuten wechseln.</p></div>",
+          "erasurePolicy": "keine Speicherung, da aus Tages-Schlüsseln berechenbar",
+          "storagePolicy": "",
+          "participantID": "2",
+          "position": {
+            "start": 2,
+            "end": 2
+          },
+          "infoTitle": "<span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> und <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Metadaten</span> anderer <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span>"
+        },
+        {
+          "id": "1-a7-1",
+          "typeId": "bt-action",
+          "label": [
+            "Corona-Warn-Server:",
+            "Einstellungen zur Risiko-Berechnung"
+          ],
+          "infoTitle": "<span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span>: Einstellungen zur Risiko-Berechnung",
+          "info": "<div>\n        <p>Der <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> stellt eine Reihe von Einstellungen zur Verfügung, mit der die Risiko-Berechnung des <span id=\"g27\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bewertungsalgorithmus</span> auf den <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> angepasst werden kann. Diese Einstellungen beeinflussen die Risiko-Berechnung indem sie unterschiedliche <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevant</span>e Aspekte und deren mögliche Ausprägungen unterschiedlich gewichten.</p>\n        <p>Hierzu gehören: Zeitraum seit dem Kontakt, Dauer des Kontakts, räumlicher Abstand des Kontakts und das Übertragungsrisiko am jeweiligen Tag durch den Kontakt selbst.</p>\n        <p>Das Robert Koch-Institut (RKI) passt die Einstellungen im Laufe der Zeit regelmäßig an die aktuellsten wissenschaftliche Erkenntnisse und Überzeugungen an, um auf diese Weise eine geeignete und möglichst genaue Ermittlung des persönlichen Risikos zu ermöglichen und unnötige Warnmeldungen durch die App zu minimieren.</p>   \n        <p>Beim Abruf der Einstellungen durch die App fallen auf Serverseite <span id=\"g28\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Zugriffsdaten</span> an.</p>   \n        </div>",
+          "erasurePolicy": "regelmäßige Anpassung",
+          "storagePolicy": "Deutsche Telekom, Standort: EU/EWR",
+          "participantID": "3",
+          "position": {
+            "start": 3,
+            "end": 3
+          }
+        },
+        {
+          "id": "1-a7-2",
+          "typeId": "bt-action",
+          "label": [
+            "Kalibrierung der Risiko-Berechnung"
+          ],
+          "info": "<div><p>Das <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> lädt regelmäßig die aktuellsten Einstellungen zur Risiko-Berechnung vom <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> und passt seine Berechnungen entsprechend an.</p></div>",
+          "participantID": "1",
+          "position": {
+            "start": 3,
+            "end": 3
+          },
+          "infoTitle": "Kalibrierung der Risiko-Berechnung"
+        },
+        {
+          "id": "1-a8",
+          "typeId": "bt-action",
+          "label": [
+            "Corona-Warn-Server:",
+            "Verzeichnis der Tages-Schlüssel mit potentiellem Infektionsgeschehen"
+          ],
+          "infoTitle": "<span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span>: Verzeichnis der <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> mit potentiellem Infektionsgeschehen",
+          "info": "<div>\n        <p>Der <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> stellt ein Verzeichnis mit alle <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüsseln</span> von Personen zur Verfügung, die sich infiziert melden.</p>\n        <p>Die Verzeichniseinträge umfassen die sogenannten <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span>. Dies sind die <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> des Meldetages sowie der letzten 14 Tage jeder infizierten Person, also der Zeitspannen in der die Personen nach aktuellem Kenntnisstand potenziell ansteckend war.</p>\n        <p>Beim Abruf der <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> durch die App fallen auf Serverseite <span id=\"g28\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Zugriffsdaten</span> an.</p>   \n        </div>",
+          "erasurePolicy": "14 Tage",
+          "storagePolicy": "Deutsche Telekom, Standort: EU/EWR",
+          "participantID": "3",
+          "position": {
+            "start": 4,
+            "end": 4
+          }
+        },
+        {
+          "id": "1-a9",
+          "typeId": "bt-action",
+          "label": [
+            "Berechnung zugehöriger Nahbereichskennungen"
+          ],
+          "info": "<div><p>Auf Basis der <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> von infizierten Personen kann Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> jede der wechselnden <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> zu diesen <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüsseln</span> berechnen.</p>\n        <p>Mit Hilfe des Ergebnisses kann entschieden werden, ob Sie Kontakt zu einer infizierten Person hatten.</p>\n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 4,
+            "end": 4
+          },
+          "infoTitle": "Berechnung zugehöriger <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span>"
+        },
+        {
+          "id": "1-a10",
+          "typeId": "bt-action",
+          "label": [
+            "Vergleich mit den empfangenen Nahbereichskennungen aus dem lokalen Kontaktprotokoll"
+          ],
+          "info": "<div><p>Die berechneten <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> werden mit den im <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktprotokoll</span> auf Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> gespeicherten <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> abgeglichen.</p>\n        <p>Falls auf Basis dieses Vergleichs festgestellt wird, dass Sie Kontakt zu einer infizierten Person hatten, kann Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> den <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> zur Entschlüsselung der dazugehörigen <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> verwenden und mit den enthaltenen Daten die ungefähre Entfernung zum anderen <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> berechnen.</p>\n        <p>Mit Hilfe der Risiko-Berechnung kann dann ermittelt werden, ob Ihr Kontakt <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevant</span> war und wie hoch das Infektionsrisiko dieses <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignisses</span> war.</p>  \n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 5,
+            "end": 5
+          },
+          "infoTitle": "Vergleich mit den empfangenen <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> aus dem <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">lokalen Kontaktprotokoll</span>"
+        },
+        {
+          "id": "1-a11",
+          "typeId": "bt-action",
+          "label": [
+            "niedriges Risiko",
+            "keine Maßnahmen notwendig"
+          ],
+          "info": "<div>\n        <p>Im Normalfall, wenn keine der infizierten Personen einen <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevanten Kontakt</span> zu Ihnen hatte, wird der Abgleich ohne ein Ergebnis enden und Ihnen ein niedriges Risiko angezeigt.</p>\n        <p><img height=\"350\" src=\"rki/appScreenshotLowRisk.jpg\"/></p>\n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 6,
+            "end": 6
+          },
+          "infoTitle": "niedriges Risiko,keine Maßnahmen notwendig"
+        }
+      ],
+      "connections": [
+        {
+          "id": "c2",
+          "typeId": "ct1",
+          "label": "Erzeugt alle 15 Minuten",
+          "source": "1-a2",
+          "destination": "1-a3",
+          "position": {
+            "start": 0,
+            "end": 1
+          }
+        },
+        {
+          "id": "c3",
+          "typeId": "ct3",
+          "label": "Aussendung per Bluetooth",
+          "source": "1-a3",
+          "destination": "1-a4",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "c4",
+          "typeId": "ct3",
+          "label": "Empfang per Bluetooth",
+          "source": "1-a6",
+          "destination": "1-a5",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        },
+        {
+          "id": "c5-1",
+          "typeId": "ct3",
+          "label": "regelmäßiger Download der Einstellungen initiiert durch eigenes Smartphone",
+          "source": "1-a7-1",
+          "destination": "1-a7-2",
+          "position": {
+            "start": 3,
+            "end": 3
+          }
+        },
+        {
+          "id": "c5",
+          "typeId": "ct3",
+          "label": "regelmäßiger Download der Diagnoseschlüssel initiiert durch eigenes Smartphone",
+          "source": "1-a8",
+          "destination": "1-a9",
+          "position": {
+            "start": 4,
+            "end": 4
+          }
+        },
+        {
+          "id": "c6",
+          "typeId": "ct1",
+          "label": "",
+          "source": "1-a9",
+          "destination": "1-a10",
+          "position": {
+            "start": 4,
+            "end": 5
+          }
+        },
+        {
+          "id": "c7",
+          "typeId": "ct1",
+          "label": "Keine Übereinstimmung",
+          "source": "1-a10",
+          "destination": "1-a11",
+          "position": {
+            "start": 5,
+            "end": 6
+          }
+        }
+      ],
+      "isOpen": false,
+      "infoTitle": "<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung"
+    },
+    {
+      "id": "case2",
+      "label": "Sie sind infiziert",
+      "info": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" weiter oben.<br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "permissions": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" weiter oben.<br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "shortInfo": [
+        ""
+      ],
+      "dataSources": [
+        {
+          "id": "2-ds1",
+          "typeId": "bt-default",
+          "label": [
+            "Corona-Test:",
+            "QR-Code Ihrer Probe"
+          ],
+          "infoTitle": "Corona-Test: <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> Ihrer Probe",
+          "info": "<div>\n        <p>Wenn bei Ihnen ein Test auf Covid-19 durchgeführt wird, erhalten Sie beim Test einen <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span>, der die von Ihnen abgegebene Probe identifiziert. Die Probe wird dann inklusive <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> und allen weiteren notwendigen Daten an das Labor versendet, das Ihre Probe untersucht.</p>\n        <p>Wenn Sie diesen <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> mit der Corona-Warn-App per Kamera einscannen, speichert Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> den <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> und registriert diesen bei nächster Gelegenheit beim <span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span>, der Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> daraufhin einen Registrierungs-Schlüssel mitteilt, der für diese Probe zukünftig gültig ist.</p>\n        <p>Mit diesem Registrierungs-Schlüssel kann Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> automatisch regelmäßig prüfen, ob Ihr Testergebnis bereits vorliegt und es dann auch abrufen und Sie über das Testergebnis benachrichtigen. Beim Abruf von Testergebnissen verarbeitet die Corona-Warn-App <span id=\"g29\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Gesundheitsdaten</span>.</p>\n        <p><em>Dieser Schritt ist optional. Sollten Sie den <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> nicht mit Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> einlesen wollen, so erfolgt die Mitteilung von Testergebnissen auf dem bisher üblichen Wege telefonisch durch das jeweilige Gesundheitsamt. Über die Hotline der Corona-Warn-App können Sie dann eine sogenannte Tele<span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> erhalten, die Sie verwenden können, wenn Sie eine Infektion dennoch mit der Corona-Warn-App weitermelden wollen.</em></p>      \n        </div>",
+          "position": {
+            "start": 0,
+            "end": 2
+          }
+        },
+        {
+          "id": "2-ds2",
+          "typeId": "bt-default",
+          "label": [
+            "Corona-Warn-App:",
+            "Ergebnis Ihres Corona-Tests",
+            "TAN-Code bzw. TeleTAN"
+          ],
+          "infoTitle": "Corona-Warn-App: Ergebnis Ihres Corona-Tests, <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span>-Code bzw. Tele<span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span>",
+          "info": "<div>\n        <p>Wenn Sie laut Testergebnis infiziert sind, sollten Sie Ihre Infektion durch die Corona-Warn-App melden lassen. Diese Meldung ist dennoch freiwillig.</p>\n        <p>Sollten Sie sich zu einer Meldung entschließen, beantragt Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> beim <span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span> eine <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span>. Diese <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> autorisiert Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> für die einmalige Übermittlung Ihrer <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> an den <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span>.\n        <p><em>Falls Sie den <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> Ihrer Probe nicht eingelesen haben, erfolgt die Mitteilung des Testergebnisses durch das Gesundheitsamt. Über die Hotline der Corona-Warn-App können Sie dann eine sogenannte Tele<span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> erhalten, die Sie verwenden können, wenn Sie eine Infektion dennoch mit der Corona-Warn-App weitermelden wollen.</em></p>      \n        </div>",
+          "position": {
+            "start": 3,
+            "end": 5
+          }
+        },
+        {
+          "id": "2-ds3",
+          "typeId": "bt-default",
+          "label": [
+            "Infektionsmeldung: Übertragung von Diagnose-Schlüsseln"
+          ],
+          "info": "<div><p>Bei Erkrankung durch Covid-19 werden Ihre <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> an den <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> übermittelt. Es handelt sich bei den <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüsseln</span> um Ihre <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> der Tage, an denen Sie potentiell infektiös waren. Dies umfasst Ihre 14 letzten <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> bis zum Meldetag.</p>\n        <p>Zusätzlich können Daten übertragen werden, die angeben, wie infektiös Sie an jedem einzelnen Tag vermutlich waren. Diese fließen in die Risikoberechnung auf den <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> Ihrer <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> ein.</p> \n        <p>Rückschlüsse auf Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> oder Ihre Person zu ziehen, ist auf Basis übermittelten Daten nicht möglich. Bei der Infektionsmeldung durch die App fallen auf Serverseite <span id=\"g28\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Zugriffsdaten</span> und <span id=\"g29\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Gesundheitsdaten</span> an.</p>   \n        </div>",
+          "position": {
+            "start": 6,
+            "end": 6
+          },
+          "infoTitle": "Infektionsmeldung: Übertragung von <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüsseln</span>"
+        },
+        {
+          "id": "2-ds2",
+          "typeId": "bt-default",
+          "label": [
+            "Lokales Kontaktprotokoll Ihrer Kontaktpersonen"
+          ],
+          "info": "<div><p>Jeder Ihrer <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> hat analog zu Ihnen eine <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktprotokoll</span> von <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> inkl. der dazugehörigen <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> gespeichert.</p>\n        <p>Im Fall, dass Sie sich infiziert melden, werden die letzten 14 <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> zum <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> übertragen und sind u.a. für die <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> Ihrer <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> zum Herunterladen verfügbar.</p>\n        <p>Aus diesen können die <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> Ihrer <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> Ihre <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> ermitteln und mit dem <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">lokalen Kontaktprotokoll</span> abgleichen.</p>\n        <p>Zusätzlich können die <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> Ihrer <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> die von Ihnen <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> mit Hilfe Ihrer <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> entschlüsseln und erhalten auf diese Weise alle notwendigen Informationen, um zu entscheiden, ob ein <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevantes</span> <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignis</span> vorlag.</p></div>",
+          "position": {
+            "start": 7,
+            "end": 10
+          },
+          "infoTitle": "Lokales <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktprotokoll</span> Ihrer <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span>"
+        }
+      ],
+      "dataPurposes": [
+        {
+          "id": "2-dp1",
+          "typeId": "bt-default",
+          "label": [
+            "Automatische Übermittlung von Testergebnissen zum Patienten"
+          ],
+          "position": {
+            "start": 0,
+            "end": 5
+          }
+        },
+        {
+          "id": "2-dp2",
+          "typeId": "bt-default",
+          "label": [
+            "Kontaktpersonen werden in die Lage versetzt, potentielle Infektionen zu erkennen und eine Warnmeldung zu erhalten"
+          ],
+          "info": "<div><p>Sie ermöglichen durch Weitergabe der Information, dass Sie mit Covid-19 infiziert sind, Ihren <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> zu reagieren und damit die <span id=\"g14\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Infektionskette</span> zu unterbrechen.</p></div>",
+          "position": {
+            "start": 6,
+            "end": 10
+          },
+          "infoTitle": "<span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> werden in die Lage versetzt, potentielle Infektionen zu erkennen und eine Warnmeldung zu erhalten"
+        }
+      ],
+      "actions": [
+        {
+          "id": "2-a1",
+          "typeId": "bt-action",
+          "label": [
+            "Einlesen des QR-Codes Ihrer Probe"
+          ],
+          "info": "<div><p>Sie können mit Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> den <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> zur Ihrer Probeentnahme einscannen und erhalten anschließend das Testergebnis automatisch durch die Corona-Warn-App, sobald dieses vorliegt.</p>\n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 0,
+            "end": 0
+          },
+          "infoTitle": "Einlesen des <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Codes</span> Ihrer Probe"
+        },
+        {
+          "id": "2-a2",
+          "typeId": "bt-action",
+          "label": [
+            "Arztpraxis:",
+            "Probeentnahme mit QR-Code"
+          ],
+          "infoTitle": "Arztpraxis: Probeentnahme mit <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span>",
+          "info": "<div><p>Bei der Probeentnahme für einen Corona-Test wird Ihnen ein <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> ausgehändigt, der Ihre Probe eindeutig identifiziert.</p>\n        <p>Mit Hilfe dieses Codes kann anschließend die Mitteilung des Testergebnisses automatisch durch die Corona-Warn-App erfolgen, sobald es vorliegt.</p>\n        </div>",
+          "participantID": "3",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "2-a3",
+          "typeId": "bt-action",
+          "label": [
+            "Labor:",
+            "Untersuchung der Probe"
+          ],
+          "infoTitle": "Labor: Untersuchung der Probe",
+          "info": "<div><p>Das Labor erhält neben der Probe selbst auch den dazugehörigen <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span>.</p>\n        <p>Sobald die Probe analysiert wurde, wird das dazugehörige Testergebnis mit dem <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> an einen <span id=\"g22\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Testergebnis-Server</span> übermittelt. Das Testergebnis steht damit auch dem <span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span> zur Verfügung, bei dem Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> regelmäßig nachfragt, ob bereits ein Testergebnis vorliegt.</p>\n        </div>",
+          "participantID": "3",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "2-a4",
+          "typeId": "bt-action",
+          "label": [
+            "Testregistrierung",
+            "Abfrage und Anzeige des Testergebnisses"
+          ],
+          "infoTitle": "Testregistrierung, Abfrage und Anzeige des Testergebnisses",
+          "info": "<div>\n        <p>Die Corona-Warn-App registriert den <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> Ihres Tests beim <span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span> und erhält im Gegenzug einen sogenannten Registrierungs-Schlüssel. Diese nur einmalig mögliche Registrierung verhindert, dass andere Personen mit Kenntnis des <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Codes</span> Ihr Testergebnis abfragen können.</p>\n        <p>Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> fragt anschließend regelmäßig mit Hilfe des Registrierungs-Schlüssels der für Ihre Probe angelegt wurde, nach dem Testergebnis.</p>\n        <p>Sobald dieses auf dem <span id=\"g22\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Testergebnis-Server</span> vorliegt, wird Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> das Ergebnis mitgeteilt und Ihnen dort zur Ansicht gebracht.</p> \n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 2,
+            "end": 3
+          }
+        },
+        {
+          "id": "2-a5",
+          "typeId": "bt-action",
+          "label": [
+            "Verifizierungs-Server:",
+            "Testregistrierung",
+            "Übermittlung von Testergebnissen",
+            "Erzeugung von TANs"
+          ],
+          "infoTitle": "<span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span>: Testregistrierung, Übermittlung von Testergebnissen, Erzeugung von <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TANs</span>",
+          "info": "<div><p>Der <span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span> stellt sicher, dass nur berechtigte Anfragen nach Testergebnissen beantwortet werden und auch nur von derjenigen Person, die sich mit dem zum Test gehörenden <span id=\"g21\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">QR-Code</span> registriert hat.</p>\n        <p>Zudem dient der <span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span> zur Erzeugung von <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TANs</span>, also Zeichenfolgen, die einen Nutzer berechtigen eine Infektionsmeldung durchzuführen.</p>\n        <p>Bei der Testregistrierung, dem Abruf des Testergebnisses und bei der <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span>-Erzeugung fallen auf Serverseite <span id=\"g28\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Zugriffsdaten</span> an. Durch den Abruf von Testergebnissen werden zwischen Server und Corona-Warn-App <span id=\"g29\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Gesundheitsdaten</span> übertragen und verarbeitet.</p>   \n        </div>",
+          "participantID": "3",
+          "erasurePolicy": "21 Tage",
+          "storagePolicy": "Deutsche Telekom, Standort: EU/EWR",
+          "position": {
+            "start": 2,
+            "end": 5
+          }
+        },
+        {
+          "id": "2-a6",
+          "typeId": "bt-action",
+          "label": [
+            "Anforderung TAN"
+          ],
+          "info": "<div><p>Wenn Sie in der Corona-Warn-App einwilligen, Ihre Infektion mit Hilfe der App zu melden, fordert Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> beim <span id=\"g23\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Verifizierungs-Server</span> eine <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> an, die Sie dazu berechtigen, einmalig eine Infektionsmeldung durchzuführen.</p>\n        <p>Falls Sie die automatische Mitteilung von Testergebnissen nicht nutzen, so können Sie über die Hotline der Corona-Warn-App eine sogenannte Tele<span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> erhalten, mit deren Hilfe Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> wiederum eine <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> beantragen kann, um eine Infektionsmeldung durchzuführen.</p> \n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 4,
+            "end": 5
+          },
+          "infoTitle": "Anforderung <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span>"
+        },
+        {
+          "id": "2-a7",
+          "typeId": "bt-action",
+          "label": [
+            "Eigene Tages-Schlüssel der infektiösen Tage + TAN"
+          ],
+          "info": "<div><p>Bei einer Infektion mit Covid-19 werden Ihre <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> (dies sind die <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> der letzten 14 Tage) inkl. einer <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> zu Autorisierung an den <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> übermittelt.</p> \n        <p>Auch hier gilt, dass Ihre <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> zwar eindeutig sind, daraus aber dennoch keine Rückschlüsse auf Sie oder Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> möglich sind.</p>\n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 6,
+            "end": 6
+          },
+          "infoTitle": "Eigene <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> der infektiösen Tage + <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span>"
+        },
+        {
+          "id": "2-a8",
+          "typeId": "bt-action",
+          "label": [
+            "Corona-Warn-Server:",
+            "Aufnahme in das Verzeichnis der Diagnose-Schlüssel"
+          ],
+          "infoTitle": "<span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span>: Aufnahme in das Verzeichnis der <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span>",
+          "info": "<div><p>Ihre <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> (also Ihre <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> mit potentiellem Infektionsgeschehen) werden nun in das öffentliche Verzeichnis der <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> des <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span>s aufgenommen.</p> \n        <p>Sie verbleiben dort für 14 Tage.</p>\n        <p>Bei der Infektionsmeldung durch die App fallen auf Serverseite <span id=\"g28\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Zugriffsdaten</span> und <span id=\"g29\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Gesundheitsdaten</span> an.</p>   \n        </div>",
+          "erasurePolicy": "14 Tage",
+          "storagePolicy": "Deutsche Telekom, Standort: EU/EWR",
+          "participantID": "3",
+          "position": {
+            "start": 6,
+            "end": 7
+          }
+        },
+        {
+          "id": "2-a9",
+          "typeId": "bt-action",
+          "label": [
+            "Berechnung dazugehöriger Nahbereichskennungen"
+          ],
+          "info": "<div><p>Auf Basis Ihrer <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> berechnen die <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> von möglichen <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> Ihre <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span>.</p>\n        <p>Mit Hilfe des Ergebnisses kann entschieden werden, ob Kontakt zu Ihnen bestand.</p>\n        </div>",
+          "participantID": "2",
+          "position": {
+            "start": 7,
+            "end": 7
+          },
+          "infoTitle": "Berechnung dazugehöriger <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span>"
+        },
+        {
+          "id": "2-a10",
+          "typeId": "bt-action",
+          "label": [
+            "Vergleich mit den empfangenen Nahbereichskennungen aus dem lokalen Kontaktprotokoll"
+          ],
+          "info": "<div><p>Ihre <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> werden mit den im <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktprotokoll</span> auf den <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> möglicher <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> gespeicherten <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> abgeglichen.</p>\n        <p>Falls auf Basis dieses Vergleichs festgestellt wird, dass jemand Kontakt zu Ihnen hatte, werden für jede dieser Ereignisse zunächst mit Hilfe Ihres <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> die dazugehörigen <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> entschlüsselt um mit den enthaltenen Daten die ungefähre Entfernung zu Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> zu berechnen.  \n        Anschließend wird für jedes <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignis</span> eine Berechnung des Infektionsrisikos durchgeführt.</p>  \n        </div>",
+          "participantID": "2",
+          "position": {
+            "start": 8,
+            "end": 8
+          },
+          "infoTitle": "Vergleich mit den empfangenen <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> aus dem <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">lokalen Kontaktprotokoll</span>"
+        },
+        {
+          "id": "2-a11",
+          "typeId": "bt-action",
+          "label": [
+            "Risiko-Berechnung"
+          ],
+          "info": "<div>\n        <p>Die Berechnung des Infektionsrisikos erfolgt durch den <span id=\"g27\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bewertungsalgorithmus</span> auf Basis verschiedener Aspekte die <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevant</span> sind: Zeitraum seit dem Kontakt, Dauer des Kontakts, räumlicher Abstand des Kontakts und das Übertragungsrisiko am jeweiligen Tag durch den Kontakt selbst.</p>\n        <p>Zu jedem dieser Aspekte liegen ein (Mess-)Wert sowie eine Menge von Einstellungen zur Kalibrierung der Berechnung vor. Mit Hilfe der Einstellungen wird die Ermittlung des Risikos für jeden einzelnen Aspekt auf Basis der (Mess-)Werte und auch die Gewichtung der Aspekte untereinander vorgenommen.</p> \n        <p>Auf Basis der Werte und Einstellungen wird das individuelle Infektionsrisiko berechnet und entschieden, ob ein erhöhtes Infektionsrisiko vorliegt.</p></div>",
+          "participantID": "2",
+          "position": {
+            "start": 9,
+            "end": 9
+          },
+          "infoTitle": "Risiko-Berechnung"
+        },
+        {
+          "id": "2-a12",
+          "typeId": "bt-action-warn",
+          "label": [
+            "Warnung: erhöhtes Risiko"
+          ],
+          "info": "<div><p>Alle Nutzer der Corona-Warn-App, deren <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphones</span> ein erhöhtes Risiko durch den Kontakt mit Ihnen ermittelt haben, werden vor einer potentiellen Infektion gewarnt.</p></div>",
+          "participantID": "2",
+          "position": {
+            "start": 10,
+            "end": 10
+          },
+          "infoTitle": "Warnung: erhöhtes Risiko"
+        }
+      ],
+      "connections": [
+        {
+          "id": "c1",
+          "typeId": "ct3",
+          "label": "Aushändigung eines Informations-Flyers mit einem QR-Code, der Ihre Probe eindeutig identifiziert",
+          "source": "2-a2",
+          "destination": "2-a1",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "c2",
+          "typeId": "ct1",
+          "label": "Lieferung: Probe mit QR-Code",
+          "source": "2-a2",
+          "destination": "2-a3",
+          "position": {
+            "start": 0,
+            "end": 1
+          }
+        },
+        {
+          "id": "c3",
+          "typeId": "ct3",
+          "label": "Übertragung des zum QR-Code gehörenden Testergebnisses",
+          "source": "2-a3",
+          "destination": "2-a5",
+          "position": {
+            "start": 2,
+            "end": 3
+          }
+        },
+        {
+          "id": "c4",
+          "typeId": "ct1",
+          "label": "Nutzung des QR-Codes zur regelmäßigen, automatischen Abfrage des Testergebnisses",
+          "source": "2-a1",
+          "destination": "2-a4",
+          "position": {
+            "start": 0,
+            "end": 2
+          }
+        },
+        {
+          "id": "c5",
+          "typeId": "ct3",
+          "label": "Registrierung des QR-Codes, regelmäßige Abfrage Testergebnis",
+          "source": "2-a4",
+          "destination": "2-a5",
+          "position": {
+            "start": 2,
+            "end": 2
+          }
+        },
+        {
+          "id": "c6",
+          "typeId": "ct3",
+          "label": "Mitteilung Testergebnis",
+          "source": "2-a5",
+          "destination": "2-a4",
+          "position": {
+            "start": 3,
+            "end": 3
+          }
+        },
+        {
+          "id": "c7",
+          "typeId": "ct1",
+          "label": "Bei positivem Testergebnis",
+          "source": "2-a4",
+          "destination": "2-a6",
+          "position": {
+            "start": 3,
+            "end": 4
+          }
+        },
+        {
+          "id": "c8",
+          "typeId": "ct3",
+          "label": "Anfrage TAN-Erzeugung",
+          "source": "2-a6",
+          "destination": "2-a5",
+          "position": {
+            "start": 4,
+            "end": 4
+          }
+        },
+        {
+          "id": "c9",
+          "typeId": "ct3",
+          "label": "Mitteilung TAN",
+          "source": "2-a5",
+          "destination": "2-a6",
+          "position": {
+            "start": 5,
+            "end": 5
+          }
+        },
+        {
+          "id": "c10",
+          "typeId": "ct1",
+          "label": "TAN",
+          "source": "2-a6",
+          "destination": "2-a7",
+          "position": {
+            "start": 5,
+            "end": 6
+          }
+        },
+        {
+          "id": "c11",
+          "typeId": "ct3",
+          "label": "Infektionsmeldung",
+          "source": "2-a7",
+          "destination": "2-a8",
+          "position": {
+            "start": 6,
+            "end": 6
+          }
+        },
+        {
+          "id": "c12",
+          "typeId": "ct3",
+          "label": "regelmäßiger Download initiiert durch Corona-Warn-App",
+          "source": "2-a8",
+          "destination": "2-a9",
+          "position": {
+            "start": 7,
+            "end": 7
+          }
+        },
+        {
+          "id": "c13",
+          "typeId": "ct1",
+          "label": "",
+          "source": "2-a9",
+          "destination": "2-a10",
+          "position": {
+            "start": 7,
+            "end": 8
+          }
+        },
+        {
+          "id": "c14",
+          "typeId": "ct1",
+          "label": "Übereinstimmung mit Ihren Nahbereichs- kennungen",
+          "source": "2-a10",
+          "destination": "2-a11",
+          "position": {
+            "start": 8,
+            "end": 9
+          }
+        },
+        {
+          "id": "c15",
+          "typeId": "ct1",
+          "label": "Bei Feststellung eines erhöhten Risikos",
+          "source": "2-a11",
+          "destination": "2-a12",
+          "position": {
+            "start": 9,
+            "end": 10
+          }
+        }
+      ],
+      "isOpen": false,
+      "infoTitle": "Sie sind infiziert"
+    },
+    {
+      "id": "case3",
+      "label": "Ein Kontakt ist infiziert",
+      "info": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" und \"Sie sind infiziert\" weiter oben.<br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "permissions": "\n          <div>\n            <p>Es handelt sich um eine ergänzende Darstellung zum Bereich \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" und \"Sie sind infiziert\" weiter oben.<br/><br/>Es werden hier nur die abweichenden oder zusätzlichen Sachverhalte dargestellt.<br/>Dementsprechend werden auch keine zusätzlichen Berechtigungen benötigt, sondern nur die unter \"<span id=\"g20\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktaufzeichnung</span> und Risikoermittlung\" gelisteten.</p>\n          </div>\n        ",
+      "dataSources": [
+        {
+          "id": "3-ds3",
+          "typeId": "bt-default",
+          "label": [
+            "Infektionsmeldung:",
+            "Übertragung von Diagnose-Schlüsseln"
+          ],
+          "infoTitle": "Infektionsmeldung: Übertragung von <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüsseln</span>",
+          "info": "<div><p>Bei Erkrankung durch Covid-19 werden <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> an den <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> übermittelt.</p>\n        <p>Es handelt sich bei den <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüsseln</span> um die <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> der Tage, an denen die <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktperson</span> potentiell infektiös war. Dies umfasst die 14 letzten <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> bis zum Meldetag. \n        <p>Rückschlüsse auf die Identität der übermittelnden Person zu ziehen, ist auf Basis der <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> nicht möglich. Bei der Infektionsmeldung durch die App fallen auf Serverseite <span id=\"g28\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Zugriffsdaten</span> und <span id=\"g29\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Gesundheitsdaten</span> an.</p>\n        </div>",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "3-ds4",
+          "typeId": "bt-default",
+          "label": [
+            "Eigenes lokales Kontaktprotokoll"
+          ],
+          "info": "<div><p>Zu jedem Ihrer Kontakte der letzten 14 Tage hat Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> die entsprechende <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennung</span> sowie die dazugehörigen <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> gespeichert.</p>\n        <p>Im Fall, dass sich einer Ihrer Kontakte infiziert meldet, werden seine letzten 14 <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> zum <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> übertragen und sind u.a. für Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> zum Herunterladen verfügbar.</p>\n        <p>Aus diesen <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüsseln</span> kann Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> die <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> der <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktperson</span> ermitteln und mit Ihrem <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">lokalen Kontaktprotokoll</span> abgleichen.</p>\n        <p>Zusätzlich kann Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> nun die <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> mit Hilfe des dazugehörigen <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span>s entschlüsseln und erhält auf diese Weise alle notwendigen Informationen, um zu entscheiden, ob ein <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevantes</span> <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignis</span> vorlag.</p>\n        </div>",
+          "position": {
+            "start": 1,
+            "end": 4
+          },
+          "infoTitle": "Eigenes <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">lokales Kontaktprotokoll</span>"
+        }
+      ],
+      "dataPurposes": [
+        {
+          "id": "3-dp2",
+          "typeId": "bt-default",
+          "label": [
+            "Sie werden in die Lage versetzt, epidemiologisch relevante Kontaktsituationen mit infizierten Personen zu erkennen und eine Warnmeldung zu erhalten"
+          ],
+          "position": {
+            "start": 0,
+            "end": 4
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "3-a1",
+          "typeId": "bt-action",
+          "label": [
+            "Tages-Schlüssel der infektiösen Tage + TAN"
+          ],
+          "info": "<div><p>Bei einer Infektion mit Covid-19 werden die <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> der infizierten <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktperson</span> (dies sind dessen <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> der letzten 14 Tage) inkl. einer <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> zur Autorisierung an den <span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span> übermittelt.</p> \n        <p>Auf Basis diese <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> und der <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span> sind keine Rückschlüsse auf die infizierte Person möglich.</p>\n        </div>",
+          "participantID": "2",
+          "position": {
+            "start": 0,
+            "end": 0
+          },
+          "infoTitle": "<span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> der infektiösen Tage + <span id=\"g26\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">TAN</span>"
+        },
+        {
+          "id": "3-a2",
+          "typeId": "bt-action",
+          "label": [
+            "Corona-Warn-Server:",
+            "Aufnahme in das Verzeichnis von Diagnose-Schlüsseln"
+          ],
+          "infoTitle": "<span id=\"g24\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Corona-Warn-Server</span>: Aufnahme in das Verzeichnis von <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüsseln</span>",
+          "info": "<div><p>Die <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> (also die <span id=\"g6\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Tages-Schlüssel</span> mit potentiellem Infektionsgeschehen der <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktperson</span>) werden in das öffentliche Verzeichnis der <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> aufgenommen.</p> \n        <p>Sie verbleiben dort für 14 Tage.</p>\n        <p>Bei der Infektionsmeldung durch die App fallen auf Serverseite <span id=\"g28\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Zugriffsdaten</span> und <span id=\"g29\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Gesundheitsdaten</span> an.</p>   \n        </div>",
+          "erasurePolicy": "14 Tage",
+          "storagePolicy": "Deutsche Telekom, Standort: EU/EWR",
+          "participantID": "3",
+          "position": {
+            "start": 0,
+            "end": 1
+          }
+        },
+        {
+          "id": "3-a3",
+          "typeId": "bt-action",
+          "label": [
+            "Berechnung dazugehöriger Nahbereichskennungen"
+          ],
+          "info": "<div><p>Auf Basis der <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> berechnet Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> die <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> von möglichen <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span>.</p>\n        <p>Mit Hilfe des Ergebnisses kann entschieden werden, ob Sie Kontakt zu einer infizierten Person hatten.</p>\n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 1,
+            "end": 1
+          },
+          "infoTitle": "Berechnung dazugehöriger <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span>"
+        },
+        {
+          "id": "3-a4",
+          "typeId": "bt-action",
+          "label": [
+            "Vergleich mit den empfangenen Nahbereichskennungen aus Ihrem lokalen Kontaktprotokoll"
+          ],
+          "info": "<div><p>Die <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> der infizierten <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktpersonen</span> werden mit den im <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktprotokoll</span> auf Ihrem <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> gespeicherten <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> abgeglichen.</p>\n        <p>Falls auf Basis dieses Vergleichs festgestellt wird, dass Sie Kontakt zu einer infizierten Person hatte, kann Ihr <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> den heruntergeladenen <span id=\"g25\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Diagnose-Schlüssel</span> zur Entschlüsselung der empfangenen <span id=\"g7\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">verschlüsselten Metadaten</span> verwenden und mit den enthaltenen Daten die ungefähre Entfernung zum <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> der <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktperson</span> berechnen.</p>\n        <p>Auf Basis von Dauer und Entfernung des Kontakts kann entschieden werden, ob der Kontakt <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevant</span> war.</p>  \n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 2,
+            "end": 2
+          },
+          "infoTitle": "Vergleich mit den empfangenen <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> aus Ihrem <span id=\"g5\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">lokalen Kontaktprotokoll</span>"
+        },
+        {
+          "id": "3-a5",
+          "typeId": "bt-action",
+          "label": [
+            "Risiko-Berechnung"
+          ],
+          "info": "<div>\n        <p>Die Berechnung des Infektionsrisikos erfolgt durch den <span id=\"g27\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Bewertungsalgorithmus</span> auf Basis verschiedener Aspekte die <span id=\"g9\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">epidemiologisch relevant</span> sind: Zeitraum seit dem Kontakt, Dauer des Kontakts, räumlicher Abstand des Kontakts und das Übertragungsrisiko am jeweiligen Tag durch den Kontakt selbst.</p>\n        <p>Zu jedem dieser Aspekte liegen ein (Mess-)Wert sowie eine Menge von Einstellungen zur Kalibrierung der Berechnung vor. Mit Hilfe der Einstellungen wird die Ermittlung des Risikos für jeden einzelnen Aspekt auf Basis der (Mess-)Werte und auch die Gewichtung der Aspekte untereinander vorgenommen.</p> \n        <p>Auf Basis der Werte und Einstellungen wird das individuelle Infektionsrisiko berechnet und entschieden, ob ein erhöhtes Infektionsrisiko vorliegt.</p></div>",
+          "participantID": "1",
+          "position": {
+            "start": 3,
+            "end": 3
+          },
+          "infoTitle": "Risiko-Berechnung"
+        },
+        {
+          "id": "3-a6",
+          "typeId": "bt-action-warn",
+          "label": [
+            "Warnung / weitere Maßnahmen notwendig"
+          ],
+          "info": "<div><p>Sie werden vor einer potentiellen Infektion gewarnt.</p>\n        </div>",
+          "participantID": "1",
+          "position": {
+            "start": 4,
+            "end": 4
+          },
+          "infoTitle": "Warnung / weitere Maßnahmen notwendig"
+        }
+      ],
+      "connections": [
+        {
+          "id": "c1",
+          "typeId": "ct3",
+          "label": "Infektionsmeldung",
+          "source": "3-a1",
+          "destination": "3-a2",
+          "position": {
+            "start": 0,
+            "end": 0
+          }
+        },
+        {
+          "id": "c2",
+          "typeId": "ct3",
+          "label": "regelmäßiger Download initiiert durch eigenes Smartphone",
+          "source": "3-a2",
+          "destination": "3-a3",
+          "position": {
+            "start": 1,
+            "end": 1
+          }
+        },
+        {
+          "id": "c3",
+          "typeId": "ct1",
+          "label": "",
+          "source": "3-a3",
+          "destination": "3-a4",
+          "position": {
+            "start": 1,
+            "end": 2
+          }
+        },
+        {
+          "id": "c4",
+          "typeId": "ct1",
+          "label": "Übereinstimmung mit gespeicherten Nahbereichskennungen",
+          "source": "3-a4",
+          "destination": "3-a5",
+          "position": {
+            "start": 2,
+            "end": 3
+          }
+        },
+        {
+          "id": "c5",
+          "typeId": "ct1",
+          "label": "Bei Feststellung eines erhöhten Risikos",
+          "source": "3-a5",
+          "destination": "3-a6",
+          "position": {
+            "start": 3,
+            "end": 4
+          }
+        }
+      ],
+      "isOpen": false,
+      "infoTitle": "Ein Kontakt ist infiziert"
+    },
+    {
+      "id": "case8",
+      "label": "Welche Daten werden nicht erfasst?",
+      "info": "\n          <div>\n            <p>Dieser Bereich listet zu Ihrer Information Daten(-arten), die von der Corona-Warn-App eben nicht erfasst und verarbeitet werden.</p>\n            <p>Die obigen Darstellungen von Daten und Prozessen sind vollständig. Es findet darüber hinaus keine Datenverarbeitung oder -übertragung statt. Insbesondere gilt das für die unten aufgeführten, besonders sensiblen Daten.</p>\n          </div>\n        ",
+      "dataSources": [
+        {
+          "id": "8-ds1",
+          "typeId": "bt-ds-notprocessed",
+          "label": [
+            "Kontakt und Adressdaten"
+          ],
+          "info": "\n          <div>\n            <p>Kontakt und Adressdaten werden weder erhoben noch übertragen. Ein Zugriff auf die im <span id=\"g3\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Smartphone</span> gespeicherten Kontakte findet nicht statt.</p>\n            <p>Stattdessen erfasst die Corona-Warn-App <span id=\"g13\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Kontaktereignisse</span> mit Personen in Ihrer Umgebung, die ebenfalls die Corona-Warn-App installiert haben.</p>\n          </div>\n        ",
+          "position": {
+            "start": 0,
+            "end": 0
+          },
+          "infoTitle": "Kontakt und Adressdaten"
+        },
+        {
+          "id": "8-ds2",
+          "typeId": "bt-ds-notprocessed",
+          "label": [
+            "Standortdaten"
+          ],
+          "info": "\n          <div>\n            <p>Standortdaten (z.B. GPS) werden nicht erfasst und auch nicht übertragen.</p>\n            <p>Stattdessen ermittelt die Corona-Warn-App lediglich <span id=\"g2\" class=\"keyword-trigger\" style=\"color: #BC1200; cursor: pointer\">Nahbereichskennungen</span> von Personen, die in Ihrer Nähe waren.</p>\n          </div>\n        ",
+          "position": {
+            "start": 1,
+            "end": 1
+          },
+          "infoTitle": "Standortdaten"
+        },
+        {
+          "id": "8-ds4",
+          "typeId": "bt-ds-notprocessed",
+          "label": [
+            "Sonstige Daten"
+          ],
+          "info": "\n          <div>\n            <p>Sonstige Daten werden weder erhoben noch übertragen.</p>\n            <p>Die in dieser Ansicht dargestellten Datenarten und Prozesse sind vollständig. Es findet darüber hinaus keine Datenverarbeitung oder -übertragung statt.</p>\n            <p>Die App ist so konzipiert, dass so wenig personenbezogene Daten wie möglich verarbeitet werden. Das bedeutet zum Beispiel, dass die App keine Daten erfasst, die es dem RKI oder anderen Nutzern ermöglichen, auf Ihre Identität, Ihren Gesundheitsstatus oder Ihren Standort zu schließen.</p>\n            <p>Zudem verzichtet die App bewusst auf jegliche Erfassung oder Analyse Ihres Nutzungsverhaltens durch Tracking-Tools.</p>            \n          </div>\n        ",
+          "position": {
+            "start": 2,
+            "end": 2
+          },
+          "infoTitle": "Sonstige Daten"
+        }
+      ],
+      "dataPurposes": [],
+      "actions": [],
+      "connections": [],
+      "isOpen": false,
+      "infoTitle": "Welche Daten werden nicht erfasst?"
+    }
+  ],
+  "sourceInformation": {
+    "id": "si-1",
+    "info": "<div><table>\n    <tr><td>Privacy-Preserving Contact Tracing&nbsp;&nbsp;</td><td><a href=\"https://www.apple.com/covid19/contacttracing\">www.apple.com/covid19/contacttracing</a></td></tr>\n    <tr><td>Quellcode der Corona-Warn-App auf Github&nbsp;</td><td><a href=\"https://github.com/corona-warn-app\">www.github.com/corona-warn-app</a></td></tr>\n    <tr><td>Prozessdokumentation der Corona-Warn-App auf Github&nbsp;</td><td><a href=\"https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md\">www.github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md</a></td></tr>\n  </table></div>"
+  },
+  "revisionHistory": {
+    "id": "rh-1",
+    "info": "<div><p><ul>\n    <li>14.06.2020: Initiale Version (V1.0)</li>\n    <li>19.06.2020: Inhaltliche und begriffliche Anpassung an die Datenschutzerklärung der App (V1.1)</li>\n    </ul></p></div>"
+  },
+  "glossar": [
+    {
+      "id": "g1",
+      "keywords": [
+        "Kryptographisch sicher",
+        "kryptographisch sicher",
+        "Kryptographisch"
+      ],
+      "title": "Kryptographie",
+      "content": "<div>\n    <p>Kryptographie ist ursprünglich die Wissenschaft der Verschlüsselung von Informationen, heute wird der Begriff allgemeiner für diverse Themen aus der Informationssicherheit verwendet.</p>\n    <p>Unter einem kryptographisch sicheren (oder auch nur kurz kryptographischem) Schlüssel versteht man eine zufällig generierte lange Zahl, die auch über Weitergabe von daraus generierten Schlüsseln selbst nicht zurückverfolgt werden kann.</p>\n    <p>Insofern ist erst recht keine Rückverfolgung zu dem Smartphone oder gar dem Besitzer des Smartphones möglich. „Nicht möglich“ in diesem Kontext heißt, dass bei den hier verwendeten Verfahren \n    heute bekannte Computerprogramme unrealistisch lange (sehr viele Jahre) für Rückberechnungen bräuchten.</p>\n    <p>Das hier angewendete mathematische Verfahren zur Erzeugung der Nahbereichskennungen aus den Tages-Schlüsseln nennt sich (kryptographische) Hashfunktion. \n    Das sind mathematische „Einwegfunktionen“, das heißt solche, bei denen aus einem Schlüssel in nicht umkehrbarer Weise ein Zielwert abgeleitet werden kann.</p>\n    <p>In der Anwendung auf Ihrem Smartphone werden aus dem jeweils aktuellen Tages-Schlüssel die Nahbereichskennungen abgeleitet.</p>\n    <p>Aus den Tages-Schüsseln eines Infektionsträgers kann Ihr Smartphone die Nahbereichskennungen dieses Smartphones selbst ableiten – das ist platzsparender, als wenn alle Nahbereichskennungen veröffentlicht und übertragen werden müssten.</p>\n    </div>"
+    },
+    {
+      "id": "g2",
+      "keywords": [
+        "wechselnde Nahbereichskennungen",
+        "wechselnde Nahbereichskennung",
+        "Nahbereichskennungen",
+        "Nahbereichskennung"
+      ],
+      "title": "Wechselnde Nahbereichskennung (Rolling Proximity Identifier)",
+      "content": "<div>\n    <p>Eine Nahbereichskennung ist eine Smartphone-individuelle Kennung, die über Bluetooth von einem Smartphone (wenn die Corona-Warn-App installiert ist) gesendet wird und in einer Entfernung von bis zu ca. 10 Metern zu empfangen ist.</p>\n    <p>Die Nahbereichskennungen wechseln alle 15 Minuten. Sie werden von Smartphones, welche ebenfalls die Corona-Warn-App installiert haben, empfangen und im lokalen Kontaktprotokoll gespeichert.</p>\n    </div>"
+    },
+    {
+      "id": "g3",
+      "keywords": [
+        "Smartphones",
+        "Smartphone"
+      ],
+      "title": "Smartphone",
+      "content": "<div>\n    <p>Die Corona-Warn-App ist eine komplexe technische Anwendung, die für ihren zuverlässigen Betrieb ein aktuelles Smartphone mit gewissen Eigenschaften benötigt.</p>\n    <p>Die verwendeten Smartphones müssen auf Basis von iOS oder Android laufen und aktuelle Updates der Betriebssysteme unterstützen.</p>\n    </div>"
+    },
+    {
+      "id": "g5",
+      "keywords": [
+        "lokales Kontaktprotokoll",
+        "lokalen Kontaktprotokoll",
+        "Kontaktprotokoll"
+      ],
+      "title": "Kontaktprotokoll",
+      "content": "<div>\n    <p>Ihr Smartphone speichert die Nahbereichskennungen von allen anderen Smartphones, die es über Bluetooth empfängt, in sogenannten lokalen Kontaktprotokoll.</p>\n    <p>Diese Liste verbleibt bis zur Löschung nur auf Ihrem Smartphone, sie wird nie weitergegeben. Jeder Kontakt wird nach 14 Tagen gelöscht.</p>\n    </div>"
+    },
+    {
+      "id": "g6",
+      "keywords": [
+        "Täglich wechselnder Schlüssel",
+        "täglich wechselnde Schlüssel",
+        "Tages-Schlüsseln",
+        "Tages-Schlüssel"
+      ],
+      "title": "Täglich wechselnder Schlüssel (Temporary Exposure Key)",
+      "content": "<div>\n    <p>Täglich wechselnde Schlüssel sind lange, zufällige Zahlen, die einmal täglich von allen Smartphones erzeugt werden, auf denen die Corona-Warn-App installiert ist. Diese Zahlen haben 39 Stellen (genauer 128bit) und sind somit extrem groß.</p>\n    <p>Diese täglichen Schlüssel dienen als Basis, um die alle 15 Minuten wechselnden Nahbereichskennungen inklusive der verschlüsselten Metadaten zu erzeugen, die per Bluetooth ausgesendet werden.</p>\n    <p>Die täglich erzeugten Schlüssel sind unabhängig voneinander, da jeden Tag eine neue Zufallszahl erzeugt wird. Auch gibt es keinen Bezug zum Smartphone, auf dem sie erzeugt werden, da es reine Zufallswerte sind.</p>\n    <p>Die Länge des Schlüssels ist so gewählt, dass aktuelle Smartphones solche Zahlen noch unproblematisch erzeugen und im Infektionsfall übermitteln können, andererseits aber das Risiko einer zufälligen Übereinstimmung \n    zweier solcher Schlüssel auf unterschiedlichen Smartphones extrem gering bleibt. Es ist sehr wichtig, dass keine Dopplungen auftreten, da diese Schlüssel im Infektionsfall dazu dienen, einen Kontakt mit dieser Person ermitteln zu können.</p>\n    </div>"
+    },
+    {
+      "id": "g7",
+      "keywords": [
+        "verschlüsselten Metadaten",
+        "verschlüsselte Metadaten",
+        "Metadaten"
+      ],
+      "title": "Verschlüsselte Metadaten (Associated Encrypted Metadata)",
+      "content": "<div>\n    <p>Die verschlüsselten Metadaten sind Daten, die zur Beurteilung notwendig sind, ob ein epidemiologisch relevantes Kontaktereignis stattgefunden hat.</p>\n    <p>Die Metadaten enthalten Informationen, mit denen z.B. die ungefähre Entfernung zum sendenden Gerät anhand der per Bluetooth empfangenen Signalstärke berechnet werden kann.</p>\n    <p>Die Entfernung zum anderen Smartphone ist ein wichtiges Merkmal bei der Beurteilung, ob eine Ansteckung stattgefunden haben kann. Die Sendeleistung per Bluetooth ist aber stark vom Modell des sendenden Smartphones abhängig, daher müssen zusätzlich zur Nahbereichskennung begleitende Informationen über die Sendeleistung des Smartphones hinzugefügt werden.</p>\n    <p>Dieses zusätzliche Datenpaket ist so verschlüsselt, dass es nur im Falle einer Infektionsmeldung des Senders, und damit einer Offenlegung seiner Tages-Schlüssel, entschlüsselt werden kann. Ohne eine Infektion des Senders sind diese Zusatzinformationen irrelevant, da die Entfernung zum Sender niemals berechnet werden muss.</p>\n    <p>Die Metadaten lassen vermutlich Rückschlüsse auf das Smartphone des jeweiligen Gegenübers zu, daher ist es aus Datenschutzgründen sinnvoll, sie so zu verschlüsseln, dass sie nur in dem Fall, indem sie benötigt werden, auch entschlüsselt werden können.\n    </div>"
+    },
+    {
+      "id": "g8",
+      "keywords": [
+        "Bluetooth"
+      ],
+      "title": "Bluetooth",
+      "content": "<div>\n    <p>Bluetooth ist ein in den 1990er Jahren entwickelter Industriestandard für die Datenübertragung zwischen Geräten über kurze Distanz per Funktechnik.</p>\n    <p>Bluetooth gehört bei modernen Smartphones zur Standardausstattung um Verbindungen mit anderen Bluetooth-fähigen Geräten herzustellen, z.B. kabellose Kopfhörer.</p>\n    <p>Für die Corona-Warn-App wird Bluetooth Low Energy (BLE) verwendet, eine Erweiterung der Bluetooth Funktechnik aus dem Jahr 2009, die sehr energieeffizient ist. Daher ist auch die Reichweite \n    des Funksignales entsprechend beschränkt, was in diesem Fall sogar erwünscht ist.</p>  \n    </div>"
+    },
+    {
+      "id": "g9",
+      "keywords": [
+        "epidemiologisch relevanter Kontakt",
+        "epidemiologisch relevanten Kontakt",
+        "epidemiologisch relevantes",
+        "epidemiologisch relevant"
+      ],
+      "title": "Epidemiologisch relevanter Kontakt",
+      "content": "<div>\n    <p>Ein Kontakt gilt als epidemiologisch relevant, wenn sich durch den Kontakt gegebenenfalls Personen infiziert haben könnten.</p>\n    <p>Epidemiologisch relevante Kontakte sind nach heutigem Kenntnisstand solche, in denen Sie in einer Entfernung von unter 1,5 Metern 15 Minuten oder länger in der Nähe zu einer anderen Person waren.</p>\n    </div>"
+    },
+    {
+      "id": "g11",
+      "keywords": [
+        "Hash-Funktionen",
+        "Hash-Funktion",
+        "Hashfunktion"
+      ],
+      "title": "Hash-Funktionen",
+      "content": "<div>\n    <p>Hash-Funktionen sind mathematische <em>Einwegfunktionen</em>, das heißt solche, bei denen aus einem Schlüssel in nicht umkehrbarer Weise ein Zielwert abgeleitet werden kann.</p>\n    </div>"
+    },
+    {
+      "id": "g12",
+      "keywords": [
+        "zentrales Verzeichnis"
+      ],
+      "title": "Zentrales Verzeichnis",
+      "content": "<div>\n    <p>Das zentrale Verzeichnis ist ein Serverdienst, der alle Tages-Schlüssel von infizierten Personen über einen Zeitraum von 14 Tagen zur Verfügung stellt.</p>\n    <p>Diese Sammlung von Tages-Schlüsseln wird regelmäßig von jedem Smartphone, auf dem die Corona-Warn-App installiert ist, heruntergeladen. Anschließend werden von jedem Smartphone aus den Tages-Schlüsseln die dazugehörigen \n    Nahbereichskennungen erzeugt und mit den empfangenen Nahbereichskennungen im lokalen Kontaktprotokoll verglichen. Eine dabei gefundene Übereinstimmung bedeutet einen Kontakt mit einem Infizierten.\n    Je nach Dauer und Entfernung dieses Kontaktereignisses, wird es ggf. als epidemiologisch relevant eingestuft und eine Warnmeldung erzeugt.</p>\n    </div>"
+    },
+    {
+      "id": "g13",
+      "keywords": [
+        "Kontaktereignisses",
+        "Kontaktereignissen",
+        "Kontaktereignisse",
+        "Kontaktereignis",
+        "Kontaktpersonen",
+        "Kontaktperson"
+      ],
+      "title": "Kontaktereignis",
+      "content": "<div>\n    <p>Als Kontakte werden in der Corona-Warn-App Begegnungen mit Personen bezeichnet, die ebenfalls die Corona-Warn-App installiert haben. Die beteiligten Smartphones tauschen dann ihre jeweiligen Nahbereichskennungen aus.</p>\n    <p>Die Bezeichnung Kontakt bezieht sich ausdrücklich nicht auf die Kontakte in Ihrem Adressbuch, auf die die Corona-Warn-App auch keinen Zugriff hat.</p>\n    <p>Ein Kontaktereignis stellt demnach die Begegnung zweiter Smartphones dar, die jeweils die Dauer und die ungefähre Entfernung in ihrem lokalen Kontaktprotokoll speichern. Auf Basis dieser Daten und der heruntergeladenen\n    Tages-Schlüssel von infektiösen Personen kann zu einem späteren Zeitpunkt abgeglichen werden, ob ein Kontakt mit einer infektiösen Person stattgefunden hat.</p>\n    </div>"
+    },
+    {
+      "id": "g14",
+      "keywords": [
+        "Infektionskette"
+      ],
+      "title": "Infektionskette",
+      "content": "<div>\n    <p>Unter der Infektionskette versteht man die Ausbreitung des Virus von einem Infizierten auf Kontaktpersonen, dann Kontaktpersonen von Kontaktpersonen etc.</p>\n    <p>Die Corona-Warn-App unterstützt die Unterbrechung solcher Infektionsketten, indem sie zum einen namentlich nicht bekannte Kontaktpersonen dennoch warnt und zum anderen \n    in vielen Fällen schneller ist, als dies in einem von Menschen abhängenden Prozess machbar ist.</p>\n    </div>"
+    },
+    {
+      "id": "g15",
+      "keywords": [
+        "Pseudoanonymisierung",
+        "pseudonym",
+        "Pseudonym"
+      ],
+      "title": "Pseudoanonymisierung",
+      "content": "<div>\n    <p>Bei der Pseudoanonymisierung versteht man die Verarbeitung personenbezogener Daten in einer Weise, dass der Personenbezug ohne Hinzuziehung zusätzlicher Informationen nicht mehr hergestellt \n    werden kann, diese zusätzlichen Informationen aber gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten \n    nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.</p>\n    </div>"
+    },
+    {
+      "id": "g16",
+      "keywords": [
+        "Anonymisierung",
+        "anonym"
+      ],
+      "title": "Anonymisierung",
+      "content": "<div>\n    <p>Die Anonymisierung ist das Verändern personenbezogener Daten derart, dass diese Daten nicht mehr oder nur mit einem unverhältnismäßig großen Aufwand an Zeit, Kosten und Arbeitskraft einer Person zugeordnet werden können.</p>\n    </div>"
+    },
+    {
+      "id": "g20",
+      "keywords": [
+        "Kontaktaufzeichnungs-Mechanismus",
+        "Exposure Notification API",
+        "Kontaktaufzeichnung"
+      ],
+      "title": "Kontaktaufzeichnungs-Mechanismus (Exposure Notification API)",
+      "content": "<div>\n    <p>Der Kontaktaufzeichnungs-Mechanismus ist ein von Google und Apple in das jeweilige Betriebssystem eingebaute Software-Modul.</p>\n    <p>Es ermöglicht den hier beschriebenen Mechanismus zur Kontaktaufzeichnung der die Risikoermittlung durch die App ermöglicht und stellt die dafür notwendigen Funktionen innerhalb des Betriebssystems des Smartphones zur Verfügung.</p>\n    <p>Die dafür notwendigen Funktionen sind im Detail beschrieben (siehe Quellenverzeichnis in der Legende) und dienen lediglich dem vorgesehenen Zweck der Erkennung von Speicherung von möglichen Kontaktereignissen.</p>\n    <p>Die Kontaktaufzeichnungs-Funktionen sind kein Bestandteil der Corona-Warn-App sondern werden Ihnen von Apple (iPhones) bzw. Google (Android-Smartphones) bereitgestellt. Sie unterliegen dementsprechend den Datenschutzbestimmungen dieser Unternehmen.</p>\n    </div>"
+    },
+    {
+      "id": "g21",
+      "keywords": [
+        "QR-Codes",
+        "QR-Code"
+      ],
+      "title": "QR-Code",
+      "content": "<div>\n    <p>Ein QR-Code ist ein zweidimensionaler, maschinenlesbarer Code, ähnlich einem Bar-Code, der von Smartphones durch Verwendung der Kamera gelesen werden kann. Durch einen QR-Code können beliebige, von der Länge begrenzte Informationen dargestellt werden.</p>\n    <p>Im Falle der Corona-Warn-App werden QR-Codes zur Identifikation von Proben bei der Testung auf Covid-19 verwendet. Die durch den QR-Code dargestellte Proben-ID ist eine eindeutige Zahl, die nur dieser einen Covid-19 Probe zugeordnet ist und vom Labor verwendet wird, um das Ergebnis der Laboruntersuchung mitzuteilen.</p>  \n    </div>"
+    },
+    {
+      "id": "g22",
+      "keywords": [
+        "Testergebnis-Server"
+      ],
+      "title": "Testergebnis-Server",
+      "content": "<div>\n    <p>Der Testergebnis-Server ist ein Bestandteil der IT-Infrastruktur der Corona-Warn-App. Dieser Server ist für die Verwaltung und Speicherung von Laborergebnissen zuständig.</p>\n    <p>Die auf diesem Server gespeicherten Daten umfassen die Proben-IDs (eindeutige Zahlen welche die Proben identifiziert) und das Ergebnis der Tests an sich.</p>\n    <p>Die Corona-Warn-App stellt ihre Anfragen nicht an diesen Server direkt, sondern an den Verifizierungs-Server. Dieser stellt sicher, dass die Anfrage berechtigt ist, sprich der Anfragende auch zu dieser Proben-ID das zugehörige Laborergebnis erhalten darf.</p> \n    <p>Der Server teilt dem Verifizierungs-Server dann das zu einer Anfrage passende Laborergebnis mit.</p>   \n    </div>"
+    },
+    {
+      "id": "g23",
+      "keywords": [
+        "Verifizierungs-Server"
+      ],
+      "title": "Verifizierungs-Server",
+      "content": "<div>\n    <p>Der Verifizierungs-Server ist ein Bestandteil der IT-Infrastruktur der Corona-Warn-App. Dieser Server ist für die Autorisierung anfragender Smartphones sowie die Erzeugung von TANs zuständig.</p>\n    <p>Dieser Server ermöglicht u.a. die Registrierung eines QR-Codes einer Covid-19 Probe zum Zweck des späteren Abrufs des Testergebnisses. Des Weiteren erzeugt er TANs, mit denen ein Smartphone dann die Infektionsmeldung durchführen kann.</p>\n    <p>Er stellt im Wesentlichen sicher, dass ausschließlich berechtigte Personen Zugriff auf die ihnen zugeordneten Testergebnisse erhalten und dass nur positiv getestete Personen eine Infektionsmeldung durchführen können.</p>   \n    </div>"
+    },
+    {
+      "id": "g24",
+      "keywords": [
+        "Corona-Warn-Server"
+      ],
+      "title": "Corona-Warn-Server",
+      "content": "<div>\n    <p>Der Corona-Warn-Server ist ein Bestandteil der IT-Infrastruktur der Corona-Warn-App. Dieser Server ist für die Entgegennahme von Infektionsmeldungen und den darin enthaltenen Diagnose-Schlüsseln zuständig.</p>\n    <p>Er sorgt regelmäßig für die korrekte Zusammenfassung der aktuell als infektiös gemeldeten Diagnose-Schlüssel und stellt die aktuellen Kalibrierungs-Einstellungen für die Berechnung des Infektions-Risikos zur Verfügung.</p>\n    <p>Sowohl der aktuelle Satz an Diagnose-Schlüsseln als auch der aktuelle Satz von Kalibrierungs-Einstellungen wird vom Corona-Warn-Server über ein Content-Delivery-Network (CDN) für alle Smartphones mit Corona-Warn-App zum Download zur Verfügung gestellt.</p> \n    </div>"
+    },
+    {
+      "id": "g25",
+      "keywords": [
+        "Diagnose-Schlüsseln",
+        "Diagnose-Schlüssel"
+      ],
+      "title": "Diagnose-Schlüssel",
+      "content": "<div>\n    <p>Die Diagnose-Schlüssel sind die bei einer Infektionsmeldung an den Corona-Warn-Server übermittelten Schlüssel. Es handelt sich dabei um die Tages-Schlüssel der letzten 14 Tage vor der Infektionsmeldung.</p>\n    <p>Der Corona-Warn-Server stellt alle Diagnose-Schlüssel der letzten 14 Tage zum Download durch die Corona-Warn-App zur Verfügung.</p>\n    <p>Die App wird dadurch in die Lage versetzt, automatisch und eigenständig entscheiden zu können, ob ein Kontaktereignis mit einer infektiösen Person vorlag.</p> \n    </div>"
+    },
+    {
+      "id": "g26",
+      "keywords": [
+        "TANs",
+        "TAN"
+      ],
+      "title": "TAN",
+      "content": "<div>\n    <p>Eine TAN ist ein eindeutiger Code, der zur Autorisierung einer Aktion verwendet wird. TANs sind z.B. aus dem Online-Banking bekannt, wo sie zur Autorisierung von Überweisungen verwendet werden.</p>\n    <p>Im Falle der Corona-Warn-App ist eine TAN zur Autorisierung der Infektionsmeldung notwendig, damit keine falschen Infektionsmeldungen vorgenommen werden können, obwohl keine Infektion vorliegt.</p>\n    </div>"
+    },
+    {
+      "id": "g27",
+      "keywords": [
+        "Bewertungsalgorithmus"
+      ],
+      "title": "Bewertungsalgorithmus ",
+      "content": "<div>\n    <p>Die Ermittlung des Infektionsrisikos wird innerhalb der Corona-Warn-App durch einen Bewertungsalgorithmus vorgenommen. Er betrachtet unterschiedliche Aspekte die jeweils epidemiologisch relevant sind. Die Aspekte und deren Ausprägungen werden mit Hilfe sogenannter Kalibrierungs-Einstellungen gewichtet und fließen somit stärker oder schwächer in die Berechnung ein. \n      Diese Einstellungen werden jeweils dem aktuellen Erkenntnisstand angepasst und vom Robert Koch-Institut (RKI) zur Verfügung gestellt. Die relevanten Aspekte sind im Detail:\n      <ul>\n        <li>Die Anzahl der Tage (0..14) seit dem potentiell infektiösen Kontaktereignis.</li>   \n        <li>Die Dauer des Kontaktereignisses (5 bis 30 Minuten). Falls mehrere Kontaktereignisse mit derselben Person innerhalb eines Tages stattgefunden haben, werden die Risiken addiert.</li>   \n        <li>Die Signalstärke des empfangenen Bluetooth-Signals. Hierbei wird die Differenz aus der Sendeleistung des sendenden Smartphones und der empfangenen Signalstärke gebildet.</li>   \n        <li>Übertragungsrisiko-Wert der infizierten Person. Bei Meldung der Infektion kann zu jedem Diagnoseschlüssel ein Wert zwischen 1 (=niedrig) und 8 (=hoch) mitgesendet werden, der das Risiko der Person als Überträger an diesem speziellen Tag beschreibt. So kann z.B. abgebildet werden, dass eine infizierte Person seit Infektionsbeginn an bestimmten Tagen innerhalb des 14 Tage-Zeitraums infektiöser ist als an anderen.</li>\n      </ul>    \n    </p>\n    <p>Die Risikowerte der Einzelaspekte werden multiplikativ zusammengefasst. Sie ergeben für jede infektiöse Person mit der Kontakt bestand ein Infektionsrisiko.</p>\n    <p>Die Ergebnisse werden zu einem einfachen verständlichen Risiko-Level zusammengefasst (\"niedriges Risiko\" oder \"erhöhtes Risiko\"), das dann durch die Corona-Warn-App angezeigt wird.</p>\n    </div>"
+    },
+    {
+      "id": "g28",
+      "keywords": [
+        "Zugriffsdaten"
+      ],
+      "title": "Zugriffsdaten",
+      "content": "<div>\n    <p>Bei jeder Kommunikation der App mit dem Serversystem fallen auf den Servern folgende Daten an: \n    <ul>\n      <li>Ihre IP-Adresse</li>\n      <li>Datum und Uhrzeit der Kommunikation</b>  \n      <li>übertragene Datenmenge</b> \n      <li>Meldung über Datenabruf oder Infektionsmeldung</b>\n    </ul>\n    Ihre IP-Adresse wird auf dem vorgelagerten Load Balancer maskiert und im Weiteren nicht mehr innerhalb des Serversystems der App verarbeitet.</p> \n    <p>Die weiteren Zugriffsdaten werden nur zur Sicherung und Aufrechterhaltung der technischen Infrastruktur verarbeitet. Sie werden dabei nicht als Nutzer der App persönlich identifiziert und es kann kein Nutzungsprofil erstellt werden.</p>\n    </div>"
+    },
+    {
+      "id": "g29",
+      "keywords": [
+        "Gesundheitsdaten"
+      ],
+      "title": "Gesundheitsdaten",
+      "content": "<div>\n    <p>Gesundheitsdaten sind personenbezogenen Daten, die Informationen zum Gesundheitszustand einer bestimmten Person enthalten. Dazu gehören nicht nur Angaben zu früheren und aktuellen Krankheiten, sondern auch zu Krankheitsrisiken einer Person.</p>\n    <p>Gesundheitsdaten werden in der Corona-Warn-App bzw. auf den Serversystemen in folgenden Fällen verarbeitet: \n    <ul>\n      <li><b>Risikoermittlung:</b> Wenn durch die Corona-Warn-App auf Ihrem Smartphone Ihr Infektionsrisiko berechnet wird. Das jeweils aktuelle errechnete Infektionsrisiko wird grundsätzlich nur auf Ihrem Smartphone gespeichert. Nur falls Sie sich entschließen, Ihre Infektion zu melden, wird der Gesundheitszustand auch an die Serversysteme der Corona-Warn-App übertragen.</li>\n      <li><b>Testregistrierung:</b> Wenn Sie den QR-Code Ihres Tests mit der Corona-Warn-App einscannen, um sich automatisch über das Testergebnis benachrichtigen zu lassen.</li>  \n      <li><b>Infektionsmeldung:</b> Falls Sie eine Infektionsmeldung veranlassen, wird der Gesundheitszustand an die Serversysteme der Corona-Warn-App übertragen. Die Meldung enthält aber lediglich die Diagnose-Schlüssel, die notwendig sind, um andere Personen warnen zu können.</li>\n    </ul>\n    </p>\n    <p>Im Übrigen gibt das RKI personenbezogene Daten, die im Zusammenhang mit der Nutzung der App erhoben werden, nur an Dritte weiter, soweit das RKI rechtlich dazu verpflichtet ist oder die Weitergabe im Falle von Angriffen auf die technische Infrastruktur der App zur Rechts- oder Strafverfolgung erforderlich ist. Eine Weitergabe in anderen Fällen erfolgt grundsätzlich nicht.</p>\n    </div>"
+    }
+  ],
+  "isDialogFullsize": true,
+  "isDetailedIcons": false,
+  "fixedLabels": {
+    "headerSource": "Welche Daten werden erfasst",
+    "headerPurpose": "Welche Ziele werden verfolgt",
+    "headerProcess": "Welche Prozesse werden umgesetzt",
+    "detailedModel": "Ausführliche Ansicht",
+    "simpleModel": "Vereinfachte Ansicht",
+    "legend": "Legende",
+    "policy": "Dauer und Ort der Speicherung",
+    "durationOfStorage": "Dauer der Speicherung",
+    "locationOfStorage": "Ort der Speicherung",
+    "permissions": "Benötigte Rechte im Smartphone",
+    "listOfSources": "Quellenverzeichnis",
+    "revisionHistory": "Änderungshistorie",
+    "info": "weitere Informationen",
+    "close": "Schließen"
+  },
+  "colors": {
+    "canvasBackground": "white",
+    "headerSourceLabel": "white",
+    "headerSourceIcon": "white",
+    "headerSourceBackground": "url(#CoronaGradient1)",
+    "headerSourceArrowBackground": "#b4daf1",
+    "headerProcessLabel": "white",
+    "headerProcessIcon": "white",
+    "headerProcessBackground": "url(#CoronaGradient_middle)",
+    "headerProcessArrowLeftBackground": "#b4daf1",
+    "headerProcessArrowRightBackground": "#b07894",
+    "headerPurposeLabel": "white",
+    "headerPurposeIcon": "white",
+    "headerPurposeBackground": "url(#CoronaGradient2)",
+    "headerPurposeArrowBackground": "#b07894",
+    "caseHeaderLabel": "#3A3D3E",
+    "caseHeaderIcon": "#3A3D3E",
+    "caseHeaderBackground": "#b4daf1",
+    "caseHeaderBackgroundGradient": "url(#CoronaGradient3)",
+    "caseBodyBackground": "#E9F4FB",
+    "caseBorder": "white",
+    "participantLabel": "#3A3D3E",
+    "participantIcon": "#3A3D3E",
+    "participantBorder": "#a9d5ef",
+    "participantBackground": "#d4eaf7",
+    "participantBackgroundGradient": "url(#blue_gradient)",
+    "caseActionIdentifierChecked": "#80CDEC",
+    "caseActionIdentifierUnchecked": "#AF4261",
+
+    "actionShortInfoBackground": "#DEDEDE",
+    "actionShortInfoRelatedBackground": "#BC1200",
+    "actionInfoIcon": "#7D7D7D",
+    "actionPolicyIcon": "#7D7D7D",
+    "actionRelatedPolicyIcon": "#BC1200",
+
+    "legendTriggerLabel": "white",
+    "legendTriggerBackground": "#AF4261",
+    "legendTriggerBackgroundHover": "#8BACCB",
+    "modelModeLabel": "white",
+    "modelModeBackground": "#AF4261",
+    "textEllipsisBackground": "#BC1200",
+    "textEllipsisLabel": "#fff",
+    "policyBackground": "#BC1200",
+    "policyIcon": "#fff",
+    "policyLabel": "#fff",
+    "glossarKeyword": "#000"
+  }
+}
